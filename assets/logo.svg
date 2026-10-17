@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Decorative Ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="100" cy="100" r="86" fill="url(#emeraldGrad)"/>
+
+  <!-- 8-Pointed Star background glow -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4">
+    <rect x="52" y="52" width="96" height="96" rx="4"/>
+    <rect x="52" y="52" width="96" height="96" rx="4" transform="rotate(45 100 100)"/>
+  </g>
+
+  <!-- Center Open Quran / Rihal Motif -->
+  <!-- Quran Stand / Rihal -->
+  <path d="M72 136 L100 114 L128 136 M84 145 L100 132 L116 145" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Page of Holy Quran -->
+  <path d="M100 82 C82 74, 58 76, 52 86 C50 102, 52 118, 54 122 C64 116, 84 114, 100 120 Z" 
+        fill="#FFFFFF" opacity="0.95" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <!-- Left Page Lines -->
+  <line x1="62" y1="94" x2="88" y2="90" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="62" y1="102" x2="90" y2="99" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="62" y1="110" x2="88" y2="108" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Right Page of Holy Quran -->
+  <path d="M100 82 C118 74, 142 76, 148 86 C150 102, 148 118, 146 122 C136 116, 116 114, 100 120 Z" 
+        fill="#FFFFFF" opacity="0.95" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <!-- Right Page Lines -->
+  <line x1="112" y1="90" x2="138" y2="94" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="110" y1="99" x2="138" y2="102" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="112" y1="108" x2="138" y2="110" stroke="#047857" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Center Quran Ribbon / Bookmark -->
+  <path d="M100 82 L100 128 L104 124 L100 128" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Light / Rays above Quran -->
+  <circle cx="100" cy="56" r="3" fill="url(#goldGrad)" filter="url(#glow)"/>
+  <line x1="100" y1="46" x2="100" y2="40" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="86" y1="50" x2="82" y2="46" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="114" y1="50" x2="118" y2="46" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="78" y1="60" x2="72" y2="60" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="122" y1="60" x2="128" y2="60" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Crescent and Star at top -->
+  <path d="M96 34 A6 6 0 1 1 104 22 A4.5 4.5 0 1 0 96 34 Z" fill="url(#goldGrad)"/>
+</svg>

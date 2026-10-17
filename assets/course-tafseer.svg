@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTafseer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="50%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldTafseer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="shadowTafseer" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#bgTafseer)"/>
+
+  <!-- Divine Rays of Light from Top -->
+  <g stroke="url(#goldTafseer)" stroke-width="1.5" opacity="0.2" fill="none">
+    <line x1="300" y1="0" x2="150" y2="360"/>
+    <line x1="300" y1="0" x2="220" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="300" y1="0" x2="380" y2="360"/>
+    <line x1="300" y1="0" x2="450" y2="360"/>
+  </g>
+
+  <!-- Main Tafseer Book Plaque -->
+  <g filter="url(#shadowTafseer)" transform="translate(150, 40)">
+    <rect x="0" y="0" width="300" height="270" rx="14" fill="#ffffff" stroke="url(#goldTafseer)" stroke-width="3"/>
+    <rect x="10" y="10" width="280" height="250" rx="10" fill="#f8fafc" stroke="#3b82f6" stroke-width="1" stroke-dasharray="6,3"/>
+
+    <!-- Calligraphic Title: تَرْجَمَةُ القُرْآنِ وَتَفْسِيرُه -->
+    <path d="M 40 24 L 260 24 L 245 56 L 55 56 Z" fill="#1e3a8a"/>
+    <text x="150" y="47" font-family="'Amiri', 'Noto Nastaliq Urdu', serif" font-size="20" font-weight="bold" fill="#fde68a" text-anchor="middle">تَرْجَمَةُ القُرْآنِ وَتَفْسِيرُه</text>
+
+    <!-- Subtitle: قرآن پاک ترجمہ و تفسیر -->
+    <text x="150" y="82" font-family="'Noto Nastaliq Urdu', serif" font-size="17" font-weight="bold" fill="#1e3a8a" text-anchor="middle">قرآن پاک ترجمہ و آسان تفسیر</text>
+
+    <!-- Word-by-Word Translation Graphic Mockup -->
+    <g transform="translate(24, 100)">
+      <!-- Arabic Ayah Text -->
+      <rect x="0" y="0" width="252" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+      <text x="126" y="24" font-family="'Amiri', serif" font-size="16" font-weight="bold" fill="#064e3b" text-anchor="middle">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</text>
+
+      <!-- Urdu Word-by-Word Meaning -->
+      <rect x="0" y="42" width="252" height="30" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+      <text x="126" y="62" font-family="'Noto Sans Arabic', sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">ہمیں سیدھے راستے کی ہدایت فرما</text>
+
+      <!-- Tafseer / Background of Revelation Box -->
+      <rect x="0" y="80" width="252" height="65" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+      <text x="126" y="100" font-family="'Noto Sans Arabic', sans-serif" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">📖 فہمِ دین اور پس منظرِ نزول</text>
+      <text x="126" y="118" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#78350f" text-anchor="middle">جامع تشریح، اسبابِ نزول اور روزمرہ زندگی میں</text>
+      <text x="126" y="134" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#78350f" text-anchor="middle">قرآنی پیغامات پر عمل کی رہنمائی</text>
+    </g>
+  </g>
+
+  <!-- Left Floating Pill -->
+  <g transform="translate(30, 270)">
+    <rect width="115" height="34" rx="17" fill="#059669"/>
+    <text x="57" y="22" font-family="'Noto Sans Arabic', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">✓ لفظی و با محاورہ</text>
+  </g>
+</svg>

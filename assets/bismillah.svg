@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 90" width="100%" height="auto">
+  <defs>
+    <linearGradient id="calliGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <!-- Beautiful Stylized Text representation with Arabic Diacritics -->
+  <text x="50%" y="58" font-family="'Amiri', 'Traditional Arabic', serif" font-size="38" font-weight="bold" fill="url(#calliGold)" text-anchor="middle" letter-spacing="1">
+    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+  </text>
+  <!-- Decorative Floral Flourishes -->
+  <path d="M70 48 C 100 48, 120 40, 140 48" stroke="url(#calliGold)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <circle cx="65" cy="48" r="3" fill="url(#calliGold)" opacity="0.8"/>
+  <path d="M430 48 C 400 48, 380 40, 360 48" stroke="url(#calliGold)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <circle cx="435" cy="48" r="3" fill="url(#calliGold)" opacity="0.8"/>
+</svg>

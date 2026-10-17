@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgArabic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="50%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="parchment" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefce8"/>
+      <stop offset="50%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="goldArabic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="shadowArabic" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#bgArabic)"/>
+
+  <!-- Calligraphy Flourishes in Background -->
+  <g fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.15">
+    <circle cx="300" cy="180" r="120"/>
+    <path d="M 120 60 Q 300 20 480 60"/>
+    <path d="M 120 300 Q 300 340 480 300"/>
+  </g>
+
+  <!-- Parchment Manuscript / Classical Grammar Volume -->
+  <g filter="url(#shadowArabic)" transform="translate(150, 35)">
+    <!-- Main Scroll/Book Body -->
+    <rect x="0" y="0" width="300" height="280" rx="14" fill="url(#parchment)" stroke="url(#goldArabic)" stroke-width="3"/>
+    <rect x="12" y="12" width="276" height="256" rx="10" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+    <!-- Calligraphic Title: لُغَةُ القُرْآنِ العَرَبِيَّة -->
+    <path d="M 40 28 L 260 28 L 245 62 L 55 62 Z" fill="#78350f"/>
+    <text x="150" y="52" font-family="'Amiri', 'Noto Nastaliq Urdu', serif" font-size="22" font-weight="bold" fill="#fef3c7" text-anchor="middle">لُغَةُ القُرْآنِ الكَرِيم</text>
+
+    <!-- Subtitle: مکمل عربی کورس -->
+    <text x="150" y="90" font-family="'Noto Nastaliq Urdu', serif" font-size="18" font-weight="bold" fill="#78350f" text-anchor="middle">مکمل 5 سالہ عربی زبان کورس</text>
+    <line x1="70" y1="102" x2="230" y2="102" stroke="#b45309" stroke-width="1.5"/>
+
+    <!-- Grammatical Components: نحو و صرف و بلاغت -->
+    <g transform="translate(30, 118)">
+      <!-- Box 1: علم النحو -->
+      <rect x="0" y="0" width="112" height="50" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+      <text x="56" y="24" font-family="'Noto Sans Arabic', sans-serif" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle">عِلْمُ النَّحْو</text>
+      <text x="56" y="40" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">جملہ سازی و اعراب</text>
+
+      <!-- Box 2: علم الصرف -->
+      <rect x="128" y="0" width="112" height="50" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+      <text x="184" y="24" font-family="'Noto Sans Arabic', sans-serif" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle">عِلْمُ الصَّرْف</text>
+      <text x="184" y="40" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">گردانیں و ابواب</text>
+
+      <!-- Box 3: قرآنی عربی -->
+      <rect x="0" y="60" width="112" height="50" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+      <text x="56" y="84" font-family="'Noto Sans Arabic', sans-serif" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">قرآنی ذخیرہ الفاظ</text>
+      <text x="56" y="100" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">85% قرآنی کلمات</text>
+
+      <!-- Box 4: عربی بول چال -->
+      <rect x="128" y="60" width="112" height="50" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+      <text x="184" y="84" font-family="'Noto Sans Arabic', sans-serif" font-size="12" font-weight="bold" fill="#065f46" text-anchor="middle">عربی بول چال</text>
+      <text x="184" y="100" font-family="'Noto Sans Arabic', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">گفتگو و تفہیم</text>
+    </g>
+
+    <!-- Bottom Quill / Feather Pen Graphic -->
+    <path d="M 230 248 Q 255 220 270 190 Q 262 215 240 245 Z" fill="#92400e"/>
+    <line x1="230" y1="248" x2="225" y2="252" stroke="#451a03" stroke-width="2"/>
+  </g>
+
+  <!-- Left Floating Pill -->
+  <g transform="translate(30, 60)">
+    <rect width="105" height="34" rx="17" fill="#f59e0b"/>
+    <text x="52" y="22" font-family="'Noto Sans Arabic', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">★ 5 سالہ نصاب ★</text>
+  </g>
+</svg>

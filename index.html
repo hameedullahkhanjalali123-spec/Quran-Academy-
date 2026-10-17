@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قریشی آن لائن قرآن اکیڈمی | مولانا قاری حمید اللہ قریشی | Qureshi Online Quran Academy</title>
+  <meta name="description" content="قریشی آن لائن قرآن اکیڈمی - بچوں اور بڑوں کے لیے آن لائن قرآن و عربی کی بااعتماد درسگاہ۔ مولانا قاری حمید اللہ قریشی صاحب کی زیرِ نگرانی 100% ون آن ون لائیو کلاسز۔ 3 دن کا فری ٹرائل!">
+  <meta name="keywords" content="قریشی آن لائن قرآن اکیڈمی, مولانا قاری حمید اللہ قریشی, آن لائن قرآن اکیڈمی, نورانی قاعدہ, تجوید, درس نظامی, عربی کورس, Qureshi Online Quran Academy">
+  <meta name="author" content="Qureshi Online Quran Academy">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="قریشی آن لائن قرآن اکیڈمی | مولانا قاری حمید اللہ قریشی">
+  <meta property="og:description" content="بچوں اور بڑوں کے لیے آن لائن قرآن و عربی کی بااعتماد درسگاہ۔ 3 دن کی فری ٹرائل کلاسز دستیاب!">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon - Official Academy Logo -->
+  <link rel="icon" type="image/jpeg" href="assets/official-logo.jpg">
+
+  <!-- Preload Jameel Noori Nastaleeq Local Web Font -->
+  <link rel="preload" href="assets/fonts/JameelNooriNastaleeq.woff" as="font" type="font/woff" crossorigin>
+
+  <!-- Google Fonts Fallbacks: Amiri, Noto Nastaliq Urdu, Noto Sans Arabic, Plus Jakarta Sans, Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SIDEBAR NAVIGATION DRAWER (سائیڈ پٹی)
+       ======================================================================== -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <aside class="app-sidebar" id="appSidebar" aria-label="Sidebar Menu">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+      <div class="brand">
+        <img src="assets/official-logo.jpg" alt="Qureshi Online Quran Academy Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title" style="font-size: 1.05rem;" data-i18n="academyName">قریشی آن لائن قرآن اکیڈمی</span>
+          <span class="brand-subtitle" style="font-size: 0.7rem;" data-i18n="academySubtitle">آن لائن قرآن و عربی درسگاہ</span>
+        </div>
+      </div>
+      <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close Sidebar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Quick CTA Action (Like "New Chat" in AI apps) -->
+    <a href="#trial" class="sidebar-cta-btn">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span data-i18n="btnHeroTrial">3 دن کا فری ٹرائل لیں</span>
+    </a>
+
+    <!-- Primary Navigation Links Section -->
+    <div class="sidebar-nav-section">
+      <div class="sidebar-nav-label">
+        <i class="fa-solid fa-compass"></i>
+        <span data-i18n="sidebarMenuTitle">اکیڈمی مینو</span>
+      </div>
+      <ul class="sidebar-links-list">
+        <li>
+          <a href="#home" class="sidebar-link active">
+            <i class="fa-solid fa-house"></i>
+            <span data-i18n="navHome">صفحہ اول</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="sidebar-link">
+            <i class="fa-solid fa-user-tie"></i>
+            <span data-i18n="navAbout">استاد کا تعارف</span>
+          </a>
+        </li>
+        <li>
+          <a href="#courses" class="sidebar-link">
+            <i class="fa-solid fa-book-open"></i>
+            <span data-i18n="navCourses">ہمارے کورسز</span>
+          </a>
+        </li>
+        <li>
+          <a href="#features" class="sidebar-link">
+            <i class="fa-solid fa-gem"></i>
+            <span data-i18n="navFeatures">خصوصیات</span>
+          </a>
+        </li>
+        <li>
+          <a href="#process" class="sidebar-link">
+            <i class="fa-solid fa-route"></i>
+            <span data-i18n="navProcess">طریقہ کار</span>
+          </a>
+        </li>
+        <li>
+          <a href="#trial" class="sidebar-link">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span data-i18n="navTrial">فری ٹرائل</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="sidebar-link">
+            <i class="fa-solid fa-phone"></i>
+            <span data-i18n="navContact">رابطہ کریں</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Courses Shortcut List (سائیڈ پٹی میں کورسز کے شارٹ کٹس) -->
+    <div class="sidebar-nav-section">
+      <div class="sidebar-nav-label">
+        <i class="fa-solid fa-book-quran"></i>
+        <span data-i18n="sidebarCoursesTitle">ہمارے کورسز</span>
+      </div>
+      <ul class="sidebar-courses-list">
+        <li>
+          <div class="sidebar-course-item" data-course="Noorani Qaida (نورانی قاعدہ)">
+            <span><i class="fa-solid fa-shapes" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c1Title">نورانی قاعدہ</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-course-item" data-course="Quran Nazra (قرآن مجید ناظرہ)">
+            <span><i class="fa-solid fa-book-quran" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c2Title">قرآن مجید ناظرہ</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-course-item" data-course="Tajweed-ul-Quran (تجوید القران)">
+            <span><i class="fa-solid fa-microphone-lines" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c3Title">تجوید القران</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-course-item" data-course="Arabic Language (مکمل عربی زبان کورس)">
+            <span><i class="fa-solid fa-language" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c4Title">مکمل عربی زبان کورس</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-course-item" data-course="Daily Duas & Islamic Manners (روزمرہ کی دعائیں)">
+            <span><i class="fa-solid fa-hands-praying" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c5Title">روزمرہ کی دعائیں</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-course-item" data-course="Quran Translation & Tafseer (ترجمہ و تفسیر)">
+            <span><i class="fa-solid fa-book-atlas" style="color: #059669; margin-inline-end: 8px;"></i> <span data-i18n="c6Title">قرآن پاک ترجمہ و تفسیر</span></span>
+            <span class="sidebar-course-icon"><i class="fa-solid fa-arrow-left"></i></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Bottom Footer -->
+    <div class="sidebar-footer">
+      <!-- WhatsApp Direct Contact: 0312-7529905 & 0321-8261906 -->
+      <a href="https://wa.me/923127529905" target="_blank" class="sidebar-wa-pill">
+        <span><i class="fa-brands fa-whatsapp"></i> 0312-7529905</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+      <a href="https://wa.me/923218261906" target="_blank" class="sidebar-wa-pill" style="background: #128c7e;">
+        <span><i class="fa-brands fa-whatsapp"></i> 0321-8261906</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+
+      <!-- Controls Row (Lang & Theme inside sidebar) -->
+      <div class="sidebar-controls-row">
+        <button id="sidebarLangBtn" class="sidebar-control-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="sidebarLangText">English</span>
+        </button>
+        <button id="sidebarThemeBtn" class="sidebar-control-btn" title="Toggle Theme">
+          <i id="sidebarThemeIcon" class="fa-solid fa-moon"></i>
+          <span id="sidebarThemeText">ڈارک موڈ</span>
+        </button>
+      </div>
+
+      <div style="font-size: 0.78rem; text-align: center; color: var(--text-light); margin-top: 4px;">
+        استاد محترم: مولانا قاری حمید اللہ قریشی
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       TOP HEADER (Clean, Uncluttered, with Sidebar Trigger)
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Left / Start: Sidebar Trigger Button & Brand -->
+      <div class="header-brand-wrap">
+        <button class="sidebar-trigger-btn" id="sidebarToggleBtn" aria-label="Open Sidebar Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <span data-i18n="sidebarToggleBtn">مینو</span>
+        </button>
+
+        <!-- Brand Official Logo & Name -->
+        <a href="#home" class="brand" aria-label="Qureshi Online Quran Academy">
+          <img src="assets/official-logo.jpg" alt="Official Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title" data-i18n="academyName">قریشی آن لائن قرآن اکیڈمی</span>
+            <span class="brand-subtitle" data-i18n="academySubtitle">آن لائن قرآن و عربی درسگاہ</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right / Actions: Lang Toggle, Theme Toggle, CTA -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <button id="langToggleBtn" class="icon-toggle-btn" aria-label="Switch Language" title="زبان تبدیل کریں">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langText">English</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button id="themeToggleBtn" class="icon-toggle-btn" aria-label="Toggle Theme" title="تھیم تبدیل کریں">
+          <i id="themeIcon" class="fa-solid fa-moon"></i>
+          <span id="themeText" class="desktop-only" data-i18n="themeToggleDark">ڈارک موڈ</span>
+        </button>
+
+        <!-- 3-Day Free Trial CTA Button -->
+        <a href="#trial" class="btn-header-cta" data-i18n="btnFreeTrialHeader">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>3 دن کا فری ٹرائل</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      
+      <!-- Bismillah Decorative SVG -->
+      <div class="hero-bismillah">
+        <img src="assets/bismillah.svg" alt="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ">
+      </div>
+
+      <div class="hero-grid">
+        
+        <!-- Hero Content / Text -->
+        <div class="hero-content">
+          
+          <div class="hero-badge-wrap">
+            <span class="badge-highlight">
+              <i class="fa-solid fa-star"></i>
+              <span data-i18n="heroBadge">داخلہ جاری ہے • 100% آن لائن کلاسز</span>
+            </span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="heroTitle">
+            قریشی آن لائن قرآن اکیڈمی
+          </h1>
+
+          <p class="hero-tagline" data-i18n="heroTagline">
+            بچوں اور بڑوں کے لیے آن لائن قرآن و عربی کی بااعتماد درسگاہ
+          </p>
+
+          <!-- 3-Day Free Trial Highlight Banner -->
+          <div class="hero-trial-banner">
+            <i class="fa-solid fa-award"></i>
+            <p data-i18n="heroTrialBanner">
+              تین دن کی فری ٹرائل کلاسز بالکل مفت! بغیر کسی فیس کے معیار پرکھیں۔
+            </p>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#trial" class="btn btn-gold">
+              <i class="fa-solid fa-book-open-reader"></i>
+              <span data-i18n="btnHeroTrial">تین دن کا ٹرائل لیں</span>
+            </a>
+            <button class="btn btn-whatsapp open-wa-modal">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="btnHeroWhatsApp">واٹس ایپ پر رابطہ کریں</span>
+            </button>
+          </div>
+
+          <!-- Quick Highlight Badges -->
+          <div class="hero-highlights-row">
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="heroFeat1">100% ون آن ون لائیو کلاسز</span>
+            </div>
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="heroFeat2">مستند سند یافتہ قاری صاحب</span>
+            </div>
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="heroFeat3">لچکدار اور آسان اوقات</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual Showcase (With Real Profile Photo of Maulana Qari Hameedullah Qureshi) -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            
+            <!-- Floating Badge 1 -->
+            <div class="floating-stat-badge badge-1">
+              <div class="stat-icon green">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <div>
+                <span data-i18n="floatingStat1">1-on-1 ذاتی توجہ</span>
+              </div>
+            </div>
+
+            <!-- Avatar: Real Photo of Maulana Qari Hameedullah Qureshi -->
+            <div class="hero-card-avatar">
+              <div class="hero-card-avatar-inner">
+                <img src="assets/profile.png" alt="مولانا قاری حمید اللہ قریشی" loading="eager">
+              </div>
+            </div>
+
+            <h3 data-i18n="heroCardName">مولانا قاری حمید اللہ قریشی</h3>
+            <p class="hero-card-role" data-i18n="heroCardRole">بانی و ہیڈ انسٹرکٹر (مستند عالم و قاری)</p>
+            
+            <div class="title-ornament">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+
+            <p class="course-desc" data-i18n="guaranteeText">
+              درست مخارج اور 100% ذاتی توجہ کی مکمل ضمانت
+            </p>
+
+            <!-- Floating Badge 2 -->
+            <div class="floating-stat-badge badge-2">
+              <div class="stat-icon gold">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div>
+                <span data-i18n="floatingStat2">3 دن فری کلاسز</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STATS BAR SECTION
+       ======================================================================== -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number" data-i18n="stat1Num">100%</div>
+          <div class="stat-label" data-i18n="stat1Label">ذاتی ون آن ون توجہ</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-i18n="stat2Num">6+</div>
+          <div class="stat-label" data-i18n="stat2Label">جامع اسلامی کورسز</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-i18n="stat3Num">3 دن</div>
+          <div class="stat-label" data-i18n="stat3Label">مفت ٹرائل کلاسز</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-i18n="stat4Num">24/7</div>
+          <div class="stat-label" data-i18n="stat4Label">لچکدار انٹرنیشنل اوقات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT FOUNDER / TEACHER SECTION (WITH REAL PHOTO)
+       ======================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="aboutSubtitle">استاد محترم کا تعارف</span>
+        </span>
+        <h2 class="section-title" data-i18n="aboutTitle">مولانا قاری حمید اللہ قریشی</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-star-and-crescent"></i>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Image Card: Real Photo Showcase of Maulana Qari Hameedullah Qureshi -->
+        <div class="about-teacher-card">
+          <div class="about-teacher-photo-wrap">
+            <img src="assets/profile.png" alt="مولانا قاری حمید اللہ قریشی - Maulana Qari Hameedullah Qureshi" loading="lazy">
+          </div>
+          <h3 class="teacher-name" data-i18n="aboutTitle">مولانا قاری حمید اللہ قریشی</h3>
+          <p class="teacher-title" data-i18n="aboutRole">اکیڈمی کے بانی و نگرانِ تدریس</p>
+          
+          <div class="teacher-guarantee-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span data-i18n="guaranteeText">درست مخارج اور 100% ذاتی توجہ کی مکمل ضمانت</span>
+          </div>
+        </div>
+
+        <!-- Bio & Credentials Details -->
+        <div class="about-content-wrap">
+          
+          <div class="about-bio-text" data-i18n="aboutBio">
+            اکیڈمی کے تمام تعلیمی امور اور تدریس کے فرائض سرانجام خود مولانا قاری حمید اللہ قریشی دیتے ہیں۔ انہوں نے باقاعدہ مستند اداروں سے قرآن پاک کا حفظِ مجید، علمِ تجوید و قرات، مکمل پانچ سالہ عربی کورس، اور درس نظامی (فہمِ دین کا مستند نصاب) کی تعلیم مکمل کی ہے۔ ذاتی توجہ اور درست مخارج کے ساتھ تعلیم کی ضمانت دی جاتی ہے۔
+          </div>
+
+          <!-- 4 Core Credentials Cards -->
+          <div class="credentials-grid">
+            
+            <div class="credential-item">
+              <div class="cred-icon">
+                <i class="fa-solid fa-book-quran"></i>
+              </div>
+              <div class="cred-info">
+                <h4 data-i18n="cred1Title">حفظِ قرآن مجید</h4>
+                <p data-i18n="cred1Desc">مستند دینی ادارے سے مکمل حفظ کلامِ الٰہی مع سند</p>
+              </div>
+            </div>
+
+            <div class="credential-item">
+              <div class="cred-icon">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
+              <div class="cred-info">
+                <h4 data-i18n="cred2Title">علمِ تجوید و قرات</h4>
+                <p data-i18n="cred2Desc">درست مخارج، لحن اور حفص عن عاصم کے اصول</p>
+              </div>
+            </div>
+
+            <div class="credential-item">
+              <div class="cred-icon">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <div class="cred-info">
+                <h4 data-i18n="cred3Title">مکمل 5 سالہ عربی کورس</h4>
+                <p data-i18n="cred3Desc">قرآنی عربی، نحو و صرف اور زبان دانی میں مکمل مہارت</p>
+              </div>
+            </div>
+
+            <div class="credential-item">
+              <div class="cred-icon">
+                <i class="fa-solid fa-scroll"></i>
+              </div>
+              <div class="cred-info">
+                <h4 data-i18n="cred4Title">درسِ نظامی (فہمِ دین)</h4>
+                <p data-i18n="cred4Desc">شریعت و علومِ اسلامیہ کا جامع اور مستند نصاب</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: 0.4rem;">
+            <a href="#trial" class="btn btn-emerald">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span data-i18n="btnHeroTrial">تین دن کا ٹرائل لیں</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COURSES OFFERED SECTION (WITH REAL BOOK COVER PICTURES)
+       ======================================================================== -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-book-open"></i>
+          <span data-i18n="coursesSubtitle">مستند اور منظم نصاب</span>
+        </span>
+        <h2 class="section-title" data-i18n="coursesTitle">ہمارے نمایاں کورسز</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="section-desc" data-i18n="coursesDesc">
+          ہر عمر کے طلباء اور خواتین و حضرات کے لیے بنیادی قاعدہ سے لے کر ترجمہ و عربی تک کے خصوصی کورسز۔
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        
+        <!-- Course 1: Noorani Qaida (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-noorani-qaida.svg" alt="نورانی قاعدہ - Noorani Qaida" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c1Title">نورانی قاعدہ</h3>
+              <p class="course-desc" data-i18n="c1Desc">
+                بچوں اور ابتدائی سیکھنے والوں کے لیے عربی حروف، حرکات اور مخارج کی درست بنیاد۔ بنیادی تلفظ کے ساتھ روانی سے پڑھنے کی مکمل رہنمائی۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c1Tag1">بچوں کے لیے بہترین</span>
+                <span class="badge-tag" data-i18n="c1Tag2">درست تلفظ</span>
+                <span class="badge-tag" data-i18n="c1Tag3">بنیادی تجوید</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Noorani Qaida (نورانی قاعدہ)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2: Quran Nazra (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-quran-nazra.svg" alt="قرآن مجید ناظرہ - Quran Nazra" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c2Title">قرآن مجید ناظرہ</h3>
+              <p class="course-desc" data-i18n="c2Desc">
+                قرآن پاک کو دیکھ کر درست تلفظ، روانی اور ترتیل کے ساتھ پڑھنے کی جامع اور منظم تدریس۔ تجویدی قواعد پر خصوصی مشق۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c2Tag1">مکمل روانی</span>
+                <span class="badge-tag" data-i18n="c2Tag2">حفظِ تسلسل</span>
+                <span class="badge-tag" data-i18n="c2Tag3">ترتیل کے ساتھ</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Quran Nazra (قرآن مجید ناظرہ)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3: Tajweed-ul-Quran (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-tajweed.svg" alt="تجوید القران - Tajweed-ul-Quran" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c3Title">تجوید القران</h3>
+              <p class="course-desc" data-i18n="c3Desc">
+                قرآن مجید کے مخارج، صفات، غنہ، اخفاء، ادغام اور مدات کے تفصیلی قواعد کے ساتھ تلاوت کی خوبصورتی کا اعلیٰ کورس۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c3Tag1">درست مخارج</span>
+                <span class="badge-tag" data-i18n="c3Tag2">قواعدِ تجوید</span>
+                <span class="badge-tag" data-i18n="c3Tag3">خوبصورت لحن</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Tajweed-ul-Quran (تجوید القران)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4: Complete Arabic Language Course (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-arabic.svg" alt="مکمل عربی زبان کورس - Arabic Language" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c4Title">مکمل عربی زبان کورس</h3>
+              <p class="course-desc" data-i18n="c4Desc">
+                قرآنی اور جدید عربی گرائمر (نحو و صرف)، ذخیرہ الفاظ، جملہ سازی اور عربی بول چال کا مکمل 5 سالہ نصاب پر مبنی کورس۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c4Tag1">نحو و صرف</span>
+                <span class="badge-tag" data-i18n="c4Tag2">قرآنی عربی</span>
+                <span class="badge-tag" data-i18n="c4Tag3">عربی گفتگو</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Arabic Language (مکمل عربی زبان کورس)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5: Daily Duas & Islamic Manners (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-duas.svg" alt="روزمرہ کی دعائیں - Daily Duas" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c5Title">روزمرہ کی دعائیں اور مسنون اعمال</h3>
+              <p class="course-desc" data-i18n="c5Desc">
+                صبح و شام کی مسنون دعائیں، نماز کی درست ادائیگی، مسنون طریقے، اخلاقیات اور اسلامی آدابِ زندگی کا خوبصورت تربیتی کورس۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c5Tag1">مسنون دعائیں</span>
+                <span class="badge-tag" data-i18n="c5Tag2">نماز کی اصلاح</span>
+                <span class="badge-tag" data-i18n="c5Tag3">اخلاق و آداب</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Daily Duas & Islamic Manners (روزمرہ کی دعائیں)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6: Quran Translation & Tafseer (مع اصل تصویر) -->
+        <div class="course-card">
+          <div class="course-cover-wrap">
+            <img src="assets/course-tafseer.svg" alt="قرآن پاک ترجمہ و تفسیر - Quran Tafseer" class="course-cover-img" loading="lazy">
+          </div>
+          <div class="course-card-body">
+            <div>
+              <h3 class="course-title" data-i18n="c6Title">قرآن پاک ترجمہ و تفسیر</h3>
+              <p class="course-desc" data-i18n="c6Desc">
+                کلام الٰہی کا لفظ بہ لفظ ترجمہ، پس منظرِ نزول، اور آسان فہم تشریح تاکہ قرآن کے پیغامات کو دل اور زندگی میں اتارا جا سکے۔
+              </p>
+              <div class="course-tags">
+                <span class="badge-tag" data-i18n="c6Tag1">لفظ بہ لفظ ترجمہ</span>
+                <span class="badge-tag" data-i18n="c6Tag2">فہمِ دین</span>
+                <span class="badge-tag" data-i18n="c6Tag3">آسان تفسیر</span>
+              </div>
+            </div>
+            <div class="course-card-bottom">
+              <button class="btn-course-enroll" data-course="Quran Translation & Tafseer (ترجمہ و تفسیر)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="btnEnrollCourse">داخلہ / فری ٹرائل لیں</span>
+              </button>
+              <span class="course-trial-pill">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="courseTrialNotice">3 دن کا فری ٹرائل</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       WHY CHOOSE US / KEY FEATURES SECTION
+       ======================================================================== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-gem"></i>
+          <span data-i18n="featuresSubtitle">اکیڈمی کا امتیاز</span>
+        </span>
+        <h2 class="section-title" data-i18n="featuresTitle">ہمیں کیوں منتخب کریں؟</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-star-of-david"></i>
+        </div>
+        <p class="section-desc" data-i18n="featuresDesc">
+          ہماری اکیڈمی جدید ترین آن لائن ذرائع سے روایتی اور مستند اسلامی تعلیمات آپ کے گھر تک پہنچاتی ہے۔
+        </p>
+      </div>
+
+      <div class="features-grid">
+        
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f1Title">براہِ راست ذاتی توجہ</h3>
+          <p class="feature-desc" data-i18n="f1Desc">
+            اکیڈمی کے بانی اور ماہر قاری صاحب خود براہِ راست پڑھاتے ہیں، کسی ناتجربہ کار اسسٹنٹ کے حوالے نہیں کیا جاتا۔
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f2Title">3 دن کا فری ٹرائل</h3>
+          <p class="feature-desc" data-i18n="f2Desc">
+            پہلے تین دن بالکل مفت کلاسز لیں، تدریس کا طریقہ اور معیار پرکھیں، مکمل تسلی کے بعد باقاعدہ داخلہ لیں۔
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f3Title">بچوں اور بڑوں کے لیے آسان اوقات</h3>
+          <p class="feature-desc" data-i18n="f3Desc">
+            طلباء، ملازمت پیشہ افراد اور خواتین کے لیے ان کے شیڈول کے عین مطابق صبح، شام یا رات کی کلاسز۔
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-house-laptop"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f4Title">گھر بیٹھے باسانی سیکھنے کا ماحول</h3>
+          <p class="feature-desc" data-i18n="f4Desc">
+            محفوظ، پرسکون اور باحیا ماحول میں اپنے گھر سے انٹرنیٹ کے ذریعے ون آن ون آن لائن کلاسز حاصل کریں۔
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f5Title">اوورسیز طلباء کے لیے بین الاقوامی سہولت</h3>
+          <p class="feature-desc" data-i18n="f5Desc">
+            پاکستان، برطانیہ (UK)، امریکہ، کینیڈا، یورپ اور خلیجی ممالک کے تمام ٹائم زونز کے مطابق سہولت۔
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3 class="feature-title" data-i18n="f6Title">جدید ملٹی میڈیا سکرین شیئرنگ</h3>
+          <p class="feature-desc" data-i18n="f6Desc">
+            ڈیجیٹل قرآن پاک، تصویری مخارج چارٹس، اور ہائی ڈیفینیشن آڈیو وڈیو کلاسز کے ساتھ دلکش اندازِ تدریس۔
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ADMISSION PROCESS SECTION
+       ======================================================================== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-route"></i>
+          <span data-i18n="processSubtitle">آسان اور شفاف طریقہ</span>
+        </span>
+        <h2 class="section-title" data-i18n="processTitle">داخلہ اور پڑھائی کا طریقہ کار</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+        <p class="section-desc" data-i18n="processDesc">
+          صرف 3 آسان اور فوری مراحل میں اپنے یا اپنے بچوں کے لیے قرآنی تعلیم کا آغاز کریں۔
+        </p>
+      </div>
+
+      <div class="process-grid">
+        
+        <!-- Step 1 -->
+        <div class="process-card">
+          <div class="process-step-num">1</div>
+          <div class="process-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="process-title" data-i18n="p1Title">واٹس ایپ پر رابطہ کریں</h3>
+          <p class="process-desc" data-i18n="p1Desc">
+            دیے گئے بٹن یا نمبر پر کلک کر کے واٹس ایپ پر میسج بھیجیں یا فری ٹرائل کا فارم پُر کریں۔
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card">
+          <div class="process-step-num">2</div>
+          <div class="process-icon">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <h3 class="process-title" data-i18n="p2Title">اپنے لیے مناسب وقت چنیں</h3>
+          <p class="process-desc" data-i18n="p2Desc">
+            استاد محترم کے ساتھ باہمی گفتگو کے بعد اپنی سہولت کے مطابق کلاس کے دن اور وقت کا تعین کریں۔
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card">
+          <div class="process-step-num">3</div>
+          <div class="process-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="process-title" data-i18n="p3Title">3 دن کا فری ٹرائل اور داخلہ کنفرم کریں</h3>
+          <p class="process-desc" data-i18n="p3Desc">
+            پہلے تین دن براہ راست لائیو کلاس پڑھیں، مکمل مطمئن ہونے کے بعد مستقل داخلہ کنفرم کریں۔
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FREE TRIAL ADMISSION FORM SECTION
+       ======================================================================== -->
+  <section class="trial-section" id="trial">
+    <div class="container">
+      
+      <div class="trial-container-box">
+        
+        <!-- Left Side: Informational -->
+        <div class="trial-info-side">
+          <div>
+            <span class="badge-highlight" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: #f59e0b; margin-bottom: 12px;">
+              <i class="fa-solid fa-award"></i>
+              <span data-i18n="heroTrialBanner">تین دن کی فری ٹرائل کلاسز بالکل مفت!</span>
+            </span>
+            <h3 data-i18n="trialBoxTitle">ابھی 3 دن کا فری ٹرائل حاصل کریں</h3>
+            <p data-i18n="trialBoxDesc">
+              بغیر کسی پیشگی فیس یا رجسٹریشن فیس کے ہمارے مستند استاد سے براہ راست آن لائن کلاس کا تجربہ کریں۔
+            </p>
+
+            <ul class="trial-perks-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="trialPerk1">کوئی ایڈوانس فیس یا کریڈٹ کارڈ کی ضرورت نہیں</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="trialPerk2">انفرادی 1-on-1 لائیو سیشن</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="trialPerk3">اپنے مطلوبہ کورس کا براہ راست انتخاب</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="trialPerk4">تین دن کے بعد داخلے کا مکمل آزادانہ فیصلہ</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="trial-contact-quick">
+            <h5 data-i18n="trialQuickCallTitle">براہِ راست فون / واٹس ایپ رابطہ:</h5>
+            <div class="trial-phone-links">
+              <!-- Official Number 1: 0312-7529905 -->
+              <a href="https://wa.me/923127529905" target="_blank" class="trial-phone-link">
+                <i class="fa-brands fa-whatsapp"></i> 0312-7529905
+              </a>
+              <!-- Official Number 2: 0321-8261906 -->
+              <a href="https://wa.me/923218261906" target="_blank" class="trial-phone-link">
+                <i class="fa-brands fa-whatsapp"></i> 0321-8261906
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Interactive Admission Form -->
+        <div class="trial-form-side">
+          <form id="freeTrialForm">
+            
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="studentName" class="form-label" data-i18n="formLabelName">طالب علم کا نام *</label>
+                <input type="text" id="studentName" class="form-input" required placeholder="مثلاً: علی احمد / عائشہ خان" data-i18n-ph="formPlaceholderName">
+              </div>
+
+              <div class="form-group">
+                <label for="studentAge" class="form-label" data-i18n="formLabelAge">عمر / کیٹیگری *</label>
+                <select id="studentAge" class="form-select">
+                  <option value="Kid (بچہ)" data-i18n="formOptChild">بچہ (Kid)</option>
+                  <option value="Adult (بالغ / بڑا)" data-i18n="formOptAdult">بالغ / بڑا (Adult)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="selectedCourse" class="form-label" data-i18n="formLabelCourse">مطلوبہ کورس منتخب کریں *</label>
+                <select id="selectedCourse" class="form-select">
+                  <option value="Noorani Qaida (نورانی قاعدہ)">نورانی قاعدہ (Noorani Qaida)</option>
+                  <option value="Quran Nazra (قرآن مجید ناظرہ)">قرآن مجید ناظرہ (Quran Nazra)</option>
+                  <option value="Tajweed-ul-Quran (تجوید القران)">تجوید القران (Tajweed-ul-Quran)</option>
+                  <option value="Arabic Language (مکمل عربی زبان کورس)">مکمل عربی زبان کورس (Arabic Language)</option>
+                  <option value="Daily Duas & Islamic Manners (روزمرہ کی دعائیں)">روزمرہ کی دعائیں اور مسنون اعمال (Daily Duas)</option>
+                  <option value="Quran Translation & Tafseer (ترجمہ و تفسیر)">قرآن پاک ترجمہ و تفسیر (Tafseer)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredTiming" class="form-label" data-i18n="formLabelTiming">مناسب وقت *</label>
+                <select id="preferredTiming" class="form-select">
+                  <option value="Morning (صبح)" data-i18n="formOptMorning">صبح کے اوقات (Morning)</option>
+                  <option value="Afternoon (دوپہر)" data-i18n="formOptAfternoon">دوپہر کے اوقات (Afternoon)</option>
+                  <option value="Evening (شام)" selected data-i18n="formOptEvening">شام کے اوقات (Evening)</option>
+                  <option value="Night (رات)" data-i18n="formOptNight">رات کے اوقات (Night)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="studentPhone" class="form-label" data-i18n="formLabelPhone">واٹس ایپ یا موبائل نمبر *</label>
+                <input type="tel" id="studentPhone" class="form-input" required placeholder="مثلاً: 03127529905" data-i18n-ph="formPlaceholderPhone">
+              </div>
+
+              <div class="form-group">
+                <label for="studentCity" class="form-label" data-i18n="formLabelCity">شہر / ملک *</label>
+                <input type="text" id="studentCity" class="form-input" required placeholder="مثلاً: لاہور، پاکستان یا لندن، UK" data-i18n-ph="formPlaceholderCity">
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="btnFormSubmit">فری ٹرائل کا اندراج کریں (WhatsApp)</span>
+            </button>
+
+            <p class="form-note" data-i18n="formNote">
+              فارم سبمٹ کرنے پر فوری واٹس ایپ میسج تیار ہو جائے گا اور استاد محترم سے براہِ راست رابطہ ہو جائے گا۔
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ SECTION
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-circle-question"></i>
+          <span data-i18n="faqSubtitle">عام پوچھے جانے والے سوالات</span>
+        </span>
+        <h2 class="section-title" data-i18n="faqTitle">کیا آپ کے ذہن میں یہ سوالات ہیں؟</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-question"></i>
+        </div>
+        <p class="section-desc" data-i18n="faqDesc">
+          آن لائن کلاسز اور اکیڈمی کے حوالے سے اکثر پوچھے جانے والے سوالات کے تفصیلی جوابات۔
+        </p>
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="faq-item active">
+          <button class="faq-trigger" type="button">
+            <span data-i18n="faq1Q">آن لائن کلاسز کس ایپلیکیشن پر ہوتی ہیں؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1A">
+              کلاسز زوم (Zoom)، گوگل میٹ (Google Meet)، اسکائپ (Skype) یا واٹس ایپ ویڈیو کال پر منعقد کی جاتی ہیں، جہاں سکرین شیئر کر کے طالب علم کو ڈیجیٹل مصحف اور قاعدہ دکھایا جاتا ہے۔
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span data-i18n="faq2Q">کیا یہ کلاسز گروپ میں ہوتی ہیں یا انفرادی؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2A">
+              ہماری تمام تر کلاسز 100% انفرادی (One-on-One) ہوتی ہیں۔ استاد محترم پورا وقت صرف ایک ہی طالب علم کو دیتے ہیں تاکہ درست مخارج اور مکمل توجہ برقرار رہے۔
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span data-i18n="faq3Q">کیا بیرونِ ملک (Overseas) کے طلباء داخلہ لے سکتے ہیں؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3A">
+              جی بالکل! ہمارے پاس پاکستان کے علاوہ برطانیہ، امریکہ، کینیڈا، یورپ، آسٹریلیا اور خلیجی ممالک (سعودی عرب، یو اے ای) سے بھی طلباء زیرِ تعلیم ہیں، اور ہم ہر ملک کے ٹائم زون کے مطابق وقت فراہم کرتے ہیں۔
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span data-i18n="faq4Q">3 دن کے فری ٹرائل کے بعد داخلے کا کیا طریقہ ہے؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4A">
+              ٹرائل کی 3 کلاسز کے دوران آپ استاد محترم کا پڑھانے کا انداز اور توجہ ملاحظہ کرتے ہیں۔ اگر آپ 100% مطمئن ہوں تو انتہائی مناسب ماہانہ ہدیہ طے کر کے باقاعدہ کلاسز جاری رکھی جاتی ہیں۔
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span data-i18n="faq5Q">اگر کسی دن کلاس رہ جائے تو کیا متبادل وقت مل سکتا ہے؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5A">
+              جی ہاں! پیشگی اطلاع دینے پر استاد محترم باہمی سہولت سے متبادل وقت یا میک اپ کلاس شیڈول کر دیتے ہیں۔
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION & OFFICIAL PHONE NUMBERS
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">
+          <i class="fa-solid fa-headset"></i>
+          <span data-i18n="contactSubtitle">ہم سے رابطہ کریں</span>
+        </span>
+        <h2 class="section-title" data-i18n="contactTitle">ہمہ وقت آپ کی خدمت میں حاضر</h2>
+        <div class="title-ornament">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <p class="section-desc" data-i18n="contactDesc">
+          فری ٹرائل، کورسز کی تفصیلات یا کسی بھی سوال کے لیے براہ راست کال یا واٹس ایپ میسج کریں۔
+        </p>
+      </div>
+
+      <!-- Contact Phone & WhatsApp Cards -->
+      <div class="contact-cards-grid">
+        
+        <!-- Line 1 Card: 0312-7529905 -->
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label" data-i18n="contactCardLabel1">ہیڈ آفس و واٹس ایپ 1</span>
+            <span class="contact-card-phone">0312-7529905</span>
+            <div class="contact-card-actions">
+              <a href="https://wa.me/923127529905" target="_blank" class="btn-mini-wa">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="btnChatWa">واٹس ایپ چیٹ</span>
+              </a>
+              <button type="button" class="btn-mini-copy" onclick="copyPhoneNumber('03127529905')">
+                <i class="fa-regular fa-copy"></i>
+                <span data-i18n="btnCopyNum">نمبر کاپی کریں</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Line 2 Card: 0321-8261906 -->
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="contact-card-info">
+            <span class="contact-card-label" data-i18n="contactCardLabel2">رابطہ نمبر و واٹس ایپ 2</span>
+            <span class="contact-card-phone">0321-8261906</span>
+            <div class="contact-card-actions">
+              <a href="https://wa.me/923218261906" target="_blank" class="btn-mini-wa">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="btnChatWa">واٹس ایپ چیٹ</span>
+              </a>
+              <button type="button" class="btn-mini-copy" onclick="copyPhoneNumber('03218261906')">
+                <i class="fa-regular fa-copy"></i>
+                <span data-i18n="btnCopyNum">نمبر کاپی کریں</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Col with Official Circular Logo -->
+        <div class="footer-col-brand">
+          <a href="#home" class="brand">
+            <img src="assets/official-logo.jpg" alt="Qureshi Online Quran Academy Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-title" data-i18n="academyName">قریشی آن لائن قرآن اکیڈمی</span>
+              <span class="brand-subtitle" style="color: #fbbf24;" data-i18n="academySubtitle">آن لائن قرآن و عربی درسگاہ</span>
+            </div>
+          </a>
+          <p class="footer-bio" data-i18n="footerAboutText">
+            قریشی آن لائن قرآن اکیڈمی بچوں، بچیوں اور بڑوں کے لیے تجوید، حفظ، عربی اور ناظرہ قرآن کی مستند و بااعتماد آن لائن درسگاہ ہے۔
+          </p>
+          <div style="font-size: 0.9rem; color: #a7f3d0; margin-bottom: 10px;">
+            <i class="fa-solid fa-user-tie"></i> <strong>نگرانِ اکیڈمی:</strong> مولانا قاری حمید اللہ قریشی
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footerQuickLinks">اہم لنکس</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navHome">صفحہ اول</span></a></li>
+            <li><a href="#about" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navAbout">استاد کا تعارف</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navCourses">ہمارے کورسز</span></a></li>
+            <li><a href="#features" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navFeatures">خصوصیات</span></a></li>
+            <li><a href="#process" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navProcess">طریقہ کار</span></a></li>
+            <li><a href="#trial" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navTrial">فری ٹرائل</span></a></li>
+            <li><a href="#contact" class="footer-link"><i class="fa-solid fa-angle-left"></i> <span data-i18n="navContact">رابطہ کریں</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Courses List -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footerCoursesHead">کورسز کی فہرست</h4>
+          <ul class="footer-links">
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c1Title">نورانی قاعدہ</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c2Title">قرآن مجید ناظرہ</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c3Title">تجوید القران</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c4Title">مکمل عربی زبان کورس</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c5Title">روزمرہ کی دعائیں</span></a></li>
+            <li><a href="#courses" class="footer-link"><i class="fa-solid fa-book-open"></i> <span data-i18n="c6Title">ترجمہ و تفسیر</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info: 0312-7529905 & 0321-8261906 -->
+        <div>
+          <h4 class="footer-heading" data-i18n="footerContactHead">رابطہ کی تفصیلات</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>مولانا قاری حمید اللہ قریشی</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923127529905" target="_blank" style="color: #6ee7b7; font-weight: 700; direction: ltr;">0312-7529905</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923218261906" target="_blank" style="color: #6ee7b7; font-weight: 700; direction: ltr;">0321-8261906</a>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>24/7 آن لائن کلاسز اور داخلہ مشاورت</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <p class="footer-bottom-copy" data-i18n="footerCopy">
+          © 2026 قریشی آن لائن قرآن اکیڈمی۔ جملہ حقوق محفوظ ہیں۔
+        </p>
+        <div>
+          <span data-i18n="footerDeveloperNote">بااعتماد اسلامی تعلیم گھر بیٹھے</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON
+       ======================================================================== -->
+  <div class="floating-whatsapp open-wa-modal" title="WhatsApp Chat">
+    <div class="floating-wa-tooltip" data-i18n="floatingWaText">آن لائن رابطہ کریں</div>
+    <button class="floating-wa-btn" aria-label="Open WhatsApp Options">
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       WHATSAPP SELECTION MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="waModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn close-modal" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="width: 56px; height: 56px; margin: 0 auto 10px auto; border-radius: 50%; background: #e8fbf0; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #25d366;">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3 class="course-title" data-i18n="waModalTitle">واٹس ایپ پر رابطہ کا انتخاب کریں</h3>
+        <p class="section-desc" style="font-size: 0.9rem; margin: 0;" data-i18n="waModalDesc">براہ کرم جس نمبر پر بات کرنا چاہتے ہیں اس پر کلک کریں:</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <!-- Line 1: 03127529905 -->
+        <button type="button" class="btn btn-whatsapp" style="width: 100%; justify-content: space-between;" onclick="openWhatsApp('primary')">
+          <span style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
+            <span style="font-size: 0.92rem;" data-i18n="waOption1">مولانا قاری حمید اللہ قریشی (لائن 1)</span>
+          </span>
+          <span style="direction: ltr; font-size: 0.9rem; font-weight: 800;">0312-7529905</span>
+        </button>
+
+        <!-- Line 2: 03218261906 -->
+        <button type="button" class="btn btn-emerald" style="width: 100%; justify-content: space-between;" onclick="openWhatsApp('secondary')">
+          <span style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
+            <span style="font-size: 0.92rem;" data-i18n="waOption2">اکیڈمی داخلہ ہیلپ لائن (لائن 2)</span>
+          </span>
+          <span style="direction: ltr; font-size: 0.9rem; font-weight: 800;">0321-8261906</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
