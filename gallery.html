@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Teaching Video &amp; Audio Gallery | Q Islamic Academy</title>
+  <meta name="description" content="Watch authentic public lesson recordings, Tajweed drills, and audio recitations from Q Islamic Academy. 100% 1-on-1 online Quran classes.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              800: '#064e3b',
+              900: '#022c22',
+              950: '#011c15',
+            },
+            emeraldBrand: {
+              500: '#059669',
+              600: '#047857',
+              700: '#065f46',
+            },
+            ivory: {
+              50: '#fcfbf7',
+              100: '#f8f7f2',
+            },
+            gold: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              900: '#041329',
+              950: '#020b18',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Plus Jakarta Sans', 'sans-serif'],
+            urdu: ['"Jameel Noori Nastaleeq"', '"Noto Nastaliq Urdu"', 'serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en bg-[#FCFBF7] dark:bg-[#040D1A] text-slate-800 dark:text-slate-100 antialiased selection:bg-emerald-600 selection:text-white transition-colors duration-300">
+
+  <!-- =================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ================================================================= -->
+  <div class="bg-forest-950 text-white text-xs py-2 px-3 sm:px-6 border-b border-forest-900/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-bold text-[11px] border border-gold-500/30">
+          <i class="fa-solid fa-play text-[9px]"></i>
+          <span class="en-only">Public Demonstration</span>
+          <span class="ur-only">تدریسی نمونہ جات</span>
+        </span>
+        <span class="text-slate-300 text-xs">
+          <span class="en-only">10 Comprehensive Courses — Opportunity to complete most courses in approx. 30 days</span>
+          <span class="ur-only">10 جامع اسلامی کورسز — زیادہ تر کورسز تقریباً 30 دن میں مکمل کرنے کا سنہری موقع</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs">
+        <a href="https://wa.me/923118284694" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition-colors">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>+92 311 8284694</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVIGATION BAR
+       ================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#051329]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="shrink-0 flex items-center gap-2 group">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy Logo" class="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-102">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-xs xl:text-sm font-bold text-slate-700 dark:text-slate-200">
+        <a href="index.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="home">Home</a>
+        <a href="about.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="about.html">About</a>
+        <a href="courses.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="courses.html">Courses</a>
+        <a href="teachers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="teachers.html">Our Teachers</a>
+        <a href="method.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="method.html">Teaching Method</a>
+        <a href="gallery.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1 text-emerald-600 dark:text-gold-400 border-b-2 border-emerald-600 dark:border-gold-400" data-page="gallery.html">Gallery</a>
+        <a href="centers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="centers.html">Our Centers</a>
+        <a href="admission.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="admission.html">Admission</a>
+        <a href="contact.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Theme Toggle -->
+        <button onclick="toggleTheme()" class="size-8 sm:size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-amber-300 flex items-center justify-center border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-xs" title="Toggle Dark/Light Mode">
+          <i id="themeIcon" class="fa-solid fa-moon text-xs sm:text-sm"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button onclick="toggleLanguage()" class="h-8 px-2.5 sm:h-9 sm:px-3 rounded-xl bg-gold-500/15 hover:bg-gold-500/25 text-gold-700 dark:text-gold-300 transition-all flex items-center gap-1 font-bold text-xs border border-gold-500/30 cursor-pointer shadow-xs" title="Toggle Language">
+          <i class="fa-solid fa-globe text-xs"></i>
+          <span id="langBtnText">اردو</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="admission.html" class="hidden sm:inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs shadow-md transition-all">
+          <i class="fa-solid fa-calendar-check text-gold-400"></i>
+          <span class="en-only">Book Free Trial</span>
+          <span class="ur-only">ٹرائل بک کریں</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden size-8 sm:size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center border border-slate-200 dark:border-slate-700" aria-label="Open Menu">
+          <i class="fa-solid fa-bars text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 w-72 sm:w-80 bg-white dark:bg-[#071326] p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+          <img src="assets/q-islamic-logo.png" alt="Logo" class="h-9 w-auto">
+          <button onclick="toggleMobileMenu()" class="size-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col gap-2 font-bold text-sm text-slate-700 dark:text-slate-200">
+          <a href="index.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">About</a>
+          <a href="courses.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Courses</a>
+          <a href="teachers.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Our Teachers</a>
+          <a href="method.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Teaching Method</a>
+          <a href="gallery.html" class="px-3 py-2.5 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-gold-400 transition-colors">Gallery</a>
+          <a href="centers.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Our Centers</a>
+          <a href="admission.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Admission</a>
+          <a href="contact.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-3">
+        <a href="admission.html" class="w-full py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-file-signature text-gold-400"></i>
+          <span>Apply for Admission</span>
+        </a>
+        <a href="https://wa.me/923118284694" target="_blank" class="w-full py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp Inquiry</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       3. PAGE HERO BANNER
+       ================================================================= -->
+  <section class="relative py-12 sm:py-16 bg-gradient-to-b from-forest-950 via-forest-900 to-forest-950 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fbbf24_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 font-bold text-xs border border-gold-500/30 mb-3">
+        <i class="fa-solid fa-circle-play text-emerald-400 text-xs"></i>
+        <span class="en-only">Open Public Demonstrations</span>
+        <span class="ur-only">اوپن پبلک تدریسی مظاہرے</span>
+      </span>
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+        <span class="en-only">Public Teaching &amp; Recitation Gallery</span>
+        <span class="ur-only">ویڈیو و آڈیو تدریسی گیلری</span>
+      </h1>
+      <p class="max-w-3xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed">
+        <span class="en-only">
+          Watch real teaching demonstrations, Tajweed drills, and soulful Qur'an recitations. No student registration required to evaluate our authentic 1-on-1 pedagogical standards.
+        </span>
+        <span class="ur-only">
+          کیو اسلامک اکیڈمی کے اساتذہ کے براہِ راست تدریسی نمونہ جات، تجوید کے اصولوں کی مشق اور پُرسوز تلاوت ملاحظہ فرمائیں۔ بغیر کسی رجسٹریشن کے ہمارے تدریسی معیار کا خود مشاہدہ کریں۔
+        </span>
+      </p>
+
+      <!-- Quick Trust Indicators -->
+      <div class="mt-8 flex flex-wrap justify-center items-center gap-3 sm:gap-6 text-xs text-slate-300">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-gold-400"></i> <span class="en-only">Child &amp; Sister Privacy Protected</span><span class="ur-only">خواتین و بچوں کے پردے کا مکمل تحفظ</span></span>
+        <span class="hidden sm:inline text-slate-600">•</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-emerald-400"></i> <span class="en-only">Verified Public Consent</span><span class="ur-only">مصدقہ عوامی مظاہرے</span></span>
+        <span class="hidden sm:inline text-slate-600">•</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-headphones text-gold-400"></i> <span class="en-only">Studio Audio &amp; Video Samples</span><span class="ur-only">ہائی کوالٹی آڈیو و ویڈیو</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. FEATURED VIDEO SHOWCASE
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 relative z-20">
+    <div class="rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] p-4 sm:p-6 shadow-xl border border-slate-200 dark:border-slate-800">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        
+        <!-- Video Preview Card -->
+        <div class="lg:col-span-7 relative rounded-2xl overflow-hidden aspect-video bg-slate-900 group shadow-md">
+          <img src="assets/c4_lahjaat.jpg" alt="Featured Lesson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/30 flex items-center justify-center">
+            <button onclick="openVideoModal('https://www.youtube.com/embed/ScMzIvxBSi4', '8 Lahjaat & Maqamaat Masterclass Demonstration')" class="size-16 sm:size-20 rounded-full bg-emerald-600/90 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all cursor-pointer group-hover:ring-8 group-hover:ring-emerald-400/30">
+              <i class="fa-solid fa-play text-xl sm:text-2xl ml-1 text-white"></i>
+            </button>
+          </div>
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-[11px] shadow-sm">
+              <i class="fa-solid fa-star mr-1"></i> Featured Masterclass
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-mono">
+              18:30 min
+            </span>
+          </div>
+          <div class="absolute bottom-3 left-3 right-3 text-white text-xs flex justify-between items-center">
+            <span class="bg-black/60 px-2.5 py-1 rounded-md backdrop-blur-md">
+              <i class="fa-solid fa-user-tie text-gold-400 mr-1.5"></i> Maulana Qari Hameedullah Qureshi
+            </span>
+            <span class="bg-black/60 px-2 py-1 rounded-md backdrop-blur-md text-[11px]">HD 1080p</span>
+          </div>
+        </div>
+
+        <!-- Details & Play Action -->
+        <div class="lg:col-span-5 flex flex-col justify-between h-full space-y-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-gold-400 uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span class="en-only">Spotlight Demonstration</span>
+              <span class="ur-only">نمایاں تدریسی مظاہرہ</span>
+            </div>
+            <h2 class="text-lg sm:text-2xl font-bold text-navy-950 dark:text-white leading-snug">
+              <span class="en-only">Practical Application of Maqam Bayati &amp; Hijaz in Quranic Recitation</span>
+              <span class="ur-only">تلاوتِ قرآن میں مقامِ بیات اور مقامِ حجاز کی عملی مشق</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+              <span class="en-only">
+                A public demonstration showing how instructors guide intermediate students through voice modulation, breath control, and the emotional resonance of the eight world-famous recitation styles.
+              </span>
+              <span class="ur-only">
+                آٹھ مشہور قرآنی لہجات (مقامات) کی عملی مشق کا خاص انداز جس میں آواز کے اتار چڑھاؤ، سانس کے قابو اور لحن کی باریکیوں کی مشق کروائی جاتی ہے۔
+              </span>
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center gap-3">
+            <button onclick="openVideoModal('https://www.youtube.com/embed/ScMzIvxBSi4', '8 Lahjaat & Maqamaat Masterclass Demonstration')" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all cursor-pointer">
+              <i class="fa-solid fa-play text-xs"></i>
+              <span class="en-only">Watch Video Now</span>
+              <span class="ur-only">ویڈیو دیکھیں</span>
+            </button>
+            <a href="admission.html?course=4" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs sm:text-sm transition-colors">
+              <span class="en-only">Enroll in this Course &rarr;</span>
+              <span class="ur-only">اس کورس میں داخلہ لیں &larr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       5. FILTER & SEARCH BAR
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
+      
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+        <button onclick="setGalleryCategory('all', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-forest-800 text-white shadow-xs transition-all cursor-pointer">
+          <span class="en-only">All Recordings</span>
+          <span class="ur-only">تمام مظاہرے</span>
+        </button>
+        <button onclick="setGalleryCategory('tajweed', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">Tajweed &amp; Makharij</span>
+          <span class="ur-only">تجوید و مخارج</span>
+        </button>
+        <button onclick="setGalleryCategory('qaida', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">Noorani Qaida</span>
+          <span class="ur-only">نورانی قاعدہ</span>
+        </button>
+        <button onclick="setGalleryCategory('maqamaat', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">8 Lahjaat</span>
+          <span class="ur-only">۸ لہجات</span>
+        </button>
+        <button onclick="setGalleryCategory('arabic', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">Arabic Grammar</span>
+          <span class="ur-only">عربی گرامر</span>
+        </button>
+        <button onclick="setGalleryCategory('kids', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">Kids &amp; Sisters</span>
+          <span class="ur-only">بچے و خواتین</span>
+        </button>
+        <button onclick="setGalleryCategory('recitation', this)" class="gallery-cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer">
+          <span class="en-only">Audio Recitations</span>
+          <span class="ur-only">آڈیو تلاوت</span>
+        </button>
+      </div>
+
+      <!-- Search Box -->
+      <div class="relative w-full md:w-72">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+        <input type="text" id="gallerySearchInput" oninput="filterGallerySearch()" placeholder="Search lesson or teacher..." class="w-full pl-9 pr-3.5 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-navy-900 text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600 transition-all">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. RECORDINGS & DEMOS GRID
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected dynamically by JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="noGalleryFound" class="hidden text-center py-16 bg-white dark:bg-[#07152B] rounded-3xl border border-slate-200 dark:border-slate-800 p-8 my-6">
+      <i class="fa-solid fa-video-slash text-4xl text-slate-300 mb-3"></i>
+      <h3 class="text-base font-bold text-slate-700 dark:text-slate-200">No recordings match your filter</h3>
+      <p class="text-xs text-slate-500 mt-1">Try another search keyword or select All Recordings.</p>
+    </div>
+
+    <!-- Load More Button -->
+    <div id="loadMoreContainer" class="mt-10 text-center">
+      <button onclick="loadMoreGallery()" id="loadMoreBtn" class="px-6 py-2.5 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs sm:text-sm hover:bg-slate-50 dark:hover:bg-slate-800 shadow-xs transition-all cursor-pointer">
+        <i class="fa-solid fa-arrows-rotate mr-1.5 text-emerald-600 dark:text-gold-400"></i>
+        <span class="en-only">Load More Demonstrations</span>
+        <span class="ur-only">مزید تدریسی ویڈیوز لوڈ کریں</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       7. CHILD SAFETY & VIDEO PRIVACY SAFEGUARD NOTICE
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="rounded-2xl sm:rounded-3xl bg-forest-950 text-white p-6 sm:p-8 border border-forest-900 shadow-md">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div class="size-12 sm:size-14 rounded-2xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 border border-gold-500/30">
+          <i class="fa-solid fa-shield-cat text-2xl"></i>
+        </div>
+        <div class="space-y-1">
+          <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+            <span class="en-only">Strict Child Safety &amp; Recording Privacy Protocol</span>
+            <span class="ur-only">بچوں اور بہنوں کے پردے و پرائیویسی کی سخت ترین پابندی</span>
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <span class="en-only">
+              All recordings published in this gallery are educational demonstrations recorded with authorized guardian consent. In accordance with Shariah purdah and international child protection standards, female scholars remain fully in purdah/audio-focused, and personal student information is never disclosed. Parents may request recording removal at any time by contacting administration.
+            </span>
+            <span class="ur-only">
+              گیلری میں موجود تمام تدریسی نمونے متعلقہ والدین اور سرپرستوں کی پیشگی اجازت سے تعلیمی مقاصد کے لیے شائع کیے گئے ہیں۔ شرعی پردے اور بچوں کی حفاظت کے تمام بین الاقوامی اصولوں کی سختی سے پابندی کی جاتی ہے۔ کسی بھی وقت ویڈیو ہٹوانے کے لیے انتظامیہ سے رابطہ کیا جا سکتا ہے۔
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       8. ADMISSION CALL TO ACTION
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="rounded-3xl bg-gradient-to-r from-forest-900 via-forest-800 to-emerald-800 text-white p-8 sm:p-12 text-center relative overflow-hidden shadow-xl">
+      <div class="relative z-10 max-w-3xl mx-auto space-y-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold border border-gold-500/30">
+          <i class="fa-solid fa-gift"></i>
+          <span class="en-only">Free Diagnostic Trial Session</span>
+          <span class="ur-only">مفت تشخیصی ٹرائل کلاس</span>
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+          <span class="en-only">Ready to Experience Our Teaching 1-on-1?</span>
+          <span class="ur-only">کیا آپ خود بالمشافہ کلاس کا تجربہ کرنا چاہتے ہیں؟</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+          <span class="en-only">
+            Book a 30-minute free trial session with our certified teachers. We assess your recitation level and recommend the best 30-day or continuous course tailored for you or your child.
+          </span>
+          <span class="ur-only">
+            ہمارے مستند اساتذہ کے ساتھ 30 منٹ کی مفت ٹرائل کلاس بک کریں۔ ہم آپ کے تلفظ کا جائزہ لے کر آپ کے لیے موزوں ترین کورس تجویز کریں گے۔
+          </span>
+        </p>
+        <div class="pt-2 flex flex-wrap justify-center gap-3">
+          <a href="admission.html" class="px-6 py-3 rounded-xl bg-gold-500 hover:bg-gold-400 text-forest-950 font-extrabold text-xs sm:text-sm shadow-md transition-all">
+            <span class="en-only">Apply for Admission &rarr;</span>
+            <span class="ur-only">داخلہ فارم پُر کریں &larr;</span>
+          </a>
+          <a href="https://wa.me/923118284694?text=Assalam-o-Alaikum%20I%20want%20to%20book%20a%20Free%20Trial%20Class%20at%20Q%20Islamic%20Academy" target="_blank" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       9. FOOTER
+       ================================================================= -->
+  <footer class="bg-forest-950 text-slate-300 text-xs border-t border-forest-900 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <!-- Brand & Mission -->
+      <div class="space-y-3 md:col-span-1">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-10 w-auto">
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Premium online Islamic academy providing certified 1-on-1 Quran, Tajweed, Tafsir, and Arabic education across 25+ countries worldwide.
+        </p>
+        <div class="flex items-center gap-3 text-slate-400 pt-1">
+          <a href="https://wa.me/923118284694" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-red-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://facebook.com" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-blue-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Quick Links</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li><a href="index.html" class="hover:text-gold-400 transition-colors">Home Portal</a></li>
+          <li><a href="about.html" class="hover:text-gold-400 transition-colors">About Academy</a></li>
+          <li><a href="courses.html" class="hover:text-gold-400 transition-colors">All 10 Courses</a></li>
+          <li><a href="teachers.html" class="hover:text-gold-400 transition-colors">Faculty &amp; Qaris</a></li>
+          <li><a href="method.html" class="hover:text-gold-400 transition-colors">Teaching Method</a></li>
+        </ul>
+      </div>
+
+      <!-- Centers & Media -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Portals &amp; Centers</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li><a href="gallery.html" class="text-gold-400 font-semibold">Public Teaching Gallery</a></li>
+          <li><a href="centers.html" class="hover:text-gold-400 transition-colors">8 Regional Desks</a></li>
+          <li><a href="admission.html" class="hover:text-gold-400 transition-colors">Online Admission</a></li>
+          <li><a href="contact.html" class="hover:text-gold-400 transition-colors">Contact Support</a></li>
+          <li><a href="admin.html" class="hover:text-gold-400 text-slate-500 text-[11px]"><i class="fa-solid fa-lock mr-1"></i>Admin Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Global Admissions</h4>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-phone text-emerald-400 mr-1.5"></i> +92 311 8284694</p>
+        <p class="text-xs text-slate-400"><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> WhatsApp Admissions (24/7)</p>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-envelope text-emerald-400 mr-1.5"></i> q.islamicacademy@gmail.com</p>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1.5"></i> Karachi Central HQ, Pakistan</p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-forest-900/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+      <p>&copy; 2026 Q Islamic Academy. All rights reserved.</p>
+      <p>Founder &amp; Head: Maulana Qari Hameedullah Qureshi</p>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       10. VIDEO MODAL PLAYER
+       ================================================================= -->
+  <div id="videoModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-3 sm:p-6 transition-opacity duration-300">
+    <div class="relative w-full max-w-4xl bg-slate-950 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+      <div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-800">
+        <div class="flex items-center gap-2 text-white font-bold text-xs sm:text-sm">
+          <i class="fa-solid fa-circle-play text-emerald-400"></i>
+          <span id="videoModalTitle">Public Teaching Demonstration</span>
+        </div>
+        <button onclick="closeVideoModal()" class="size-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="relative aspect-video w-full bg-black">
+        <iframe id="videoModalIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="p-3 bg-slate-900/90 text-slate-400 text-xs flex justify-between items-center">
+        <span><i class="fa-solid fa-shield-halved text-gold-400 mr-1"></i> Authorized Public Demo</span>
+        <a href="admission.html" class="text-emerald-400 hover:underline font-bold">Apply for 1-on-1 Classes &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       11. AUDIO PLAYER FLOATING TOAST
+       ================================================================= -->
+  <div id="audioToast" class="fixed bottom-4 right-4 z-40 bg-navy-950 text-white rounded-2xl shadow-2xl p-4 border border-gold-500/30 hidden max-w-md w-full animate-bounce-subtle">
+    <div class="flex items-center justify-between gap-3 mb-2">
+      <div class="flex items-center gap-2 min-w-0">
+        <div class="size-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-headphones text-xs"></i>
+        </div>
+        <div class="min-w-0">
+          <div id="audioToastTitle" class="text-xs font-bold truncate">Surah Ar-Rahman Recitation</div>
+          <div class="text-[10px] text-slate-400">Maulana Qari Hameedullah Qureshi</div>
+        </div>
+      </div>
+      <button onclick="closeAudioPlayer()" class="size-6 rounded-md hover:bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center text-xs">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <audio id="globalAudioPlayer" controls class="w-full h-8 outline-none"></audio>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    let activeGalleryCat = 'all';
+    let displayedCount = 6;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGalleryItems();
+    });
+
+    function setGalleryCategory(cat, btn) {
+      activeGalleryCat = cat;
+      document.querySelectorAll('.gallery-cat-btn').forEach(b => {
+        b.classList.remove('bg-forest-800', 'text-white');
+        b.classList.add('bg-white', 'dark:bg-navy-900', 'text-slate-700', 'dark:text-slate-300');
+      });
+      if (btn) {
+        btn.classList.add('bg-forest-800', 'text-white');
+        btn.classList.remove('bg-white', 'dark:bg-navy-900', 'text-slate-700', 'dark:text-slate-300');
+      }
+      displayedCount = 6;
+      renderGalleryItems();
+    }
+
+    function filterGallerySearch() {
+      displayedCount = 6;
+      renderGalleryItems();
+    }
+
+    function loadMoreGallery() {
+      displayedCount += 6;
+      renderGalleryItems();
+    }
+
+    function renderGalleryItems() {
+      const grid = document.getElementById('galleryGrid');
+      const emptyState = document.getElementById('noGalleryFound');
+      const loadMoreBtn = document.getElementById('loadMoreContainer');
+      if (!grid) return;
+
+      const items = window.Q_STORE ? window.Q_STORE.getGallery() : (ACADEMY_DATA.gallery || []);
+      const searchVal = (document.getElementById('gallerySearchInput')?.value || '').toLowerCase().trim();
+      const isUrdu = currentLang === 'ur';
+
+      let filtered = items;
+
+      // Category filter
+      if (activeGalleryCat !== 'all') {
+        filtered = filtered.filter(item => {
+          if (activeGalleryCat === 'recitation') return item.type === 'audio' || item.category === 'recitation';
+          return item.category === activeGalleryCat;
+        });
+      }
+
+      // Search filter
+      if (searchVal) {
+        filtered = filtered.filter(item => {
+          const tEn = (item.titleEn || '').toLowerCase();
+          const tUr = (item.titleUr || '').toLowerCase();
+          const dEn = (item.descEn || '').toLowerCase();
+          const dUr = (item.descUr || '').toLowerCase();
+          const teachEn = (item.teacherEn || '').toLowerCase();
+          const teachUr = (item.teacherUr || '').toLowerCase();
+          return tEn.includes(searchVal) || tUr.includes(searchVal) || dEn.includes(searchVal) || dUr.includes(searchVal) || teachEn.includes(searchVal) || teachUr.includes(searchVal);
+        });
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        if (loadMoreBtn) loadMoreBtn.classList.add('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+
+      const itemsToRender = filtered.slice(0, displayedCount);
+
+      if (loadMoreBtn) {
+        if (displayedCount >= filtered.length) {
+          loadMoreBtn.classList.add('hidden');
+        } else {
+          loadMoreBtn.classList.remove('hidden');
+        }
+      }
+
+      grid.innerHTML = itemsToRender.map(item => {
+        const title = isUrdu ? item.titleUr : item.titleEn;
+        const desc = isUrdu ? item.descUr : item.descEn;
+        const teacher = isUrdu ? item.teacherUr : item.teacherEn;
+        const catLabel = isUrdu ? item.categoryLabelUr : item.categoryLabelEn;
+
+        if (item.type === 'audio') {
+          return `
+            <div class="rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+                    <i class="fa-solid fa-volume-high text-[10px]"></i>
+                    <span>${catLabel || 'Audio Recitation'}</span>
+                  </span>
+                  <span class="text-xs font-mono text-slate-400"><i class="fa-regular fa-clock mr-1"></i>${item.duration}</span>
+                </div>
+
+                <div class="size-14 rounded-2xl bg-gradient-to-tr from-amber-600 to-gold-400 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+                  <i class="fa-solid fa-headphones"></i>
+                </div>
+
+                <h3 class="text-base font-bold text-navy-950 dark:text-white mb-2 leading-snug">${title}</h3>
+                <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed mb-4">${desc}</p>
+                
+                <div class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-2 mb-4">
+                  <i class="fa-solid fa-user text-gold-500"></i>
+                  <span>${teacher}</span>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+                <button onclick="playAudioDemo('${item.audioUrl}', '${title.replace(/'/g, "\\'")}')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-forest-800 hover:bg-forest-900 text-white text-xs font-bold transition-all cursor-pointer shadow-xs">
+                  <i class="fa-solid fa-play text-xs text-gold-400"></i>
+                  <span>${isUrdu ? 'تلاوت سنیں' : 'Play Audio'}</span>
+                </button>
+                <a href="admission.html" class="text-xs font-bold text-emerald-600 dark:text-gold-400 hover:underline">
+                  ${isUrdu ? 'داخلہ لیں' : 'Enroll Now &rarr;'}
+                </a>
+              </div>
+            </div>
+          `;
+        }
+
+        // Video Card
+        return `
+          <div class="rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative aspect-video bg-slate-900 overflow-hidden">
+                <img src="${item.thumbnail}" alt="${title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 backdrop-blur-md">
+                    <i class="fa-solid fa-tag text-[9px]"></i>
+                    <span>${catLabel}</span>
+                  </span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+                  <span class="bg-black/60 px-2 py-0.5 rounded backdrop-blur-md font-mono text-[11px]"><i class="fa-regular fa-clock mr-1"></i>${item.duration}</span>
+                  <span class="text-slate-300 text-[11px]">${item.date || 'Recent'}</span>
+                </div>
+                <button onclick="openVideoModal('${item.videoUrl}', '${title.replace(/'/g, "\\'")}')" class="absolute inset-0 m-auto size-12 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition-all cursor-pointer">
+                  <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+                </button>
+              </div>
+
+              <div class="p-4 sm:p-5">
+                <h3 class="text-sm sm:text-base font-bold text-navy-950 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-gold-400 transition-colors leading-snug mb-2">
+                  ${title}
+                </h3>
+                <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed mb-3">
+                  ${desc}
+                </p>
+                <div class="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                  <i class="fa-solid fa-chalkboard-user text-emerald-600 dark:text-gold-400"></i>
+                  <span>${teacher}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 sm:p-5 pt-0 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2 mt-2">
+              <button onclick="openVideoModal('${item.videoUrl}', '${title.replace(/'/g, "\\'")}')" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-gold-400 hover:underline cursor-pointer py-1">
+                <i class="fa-solid fa-circle-play text-xs"></i>
+                <span>${isUrdu ? 'سبق دیکھیں' : 'Watch Demonstration'}</span>
+              </button>
+              <a href="admission.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white text-xs font-bold transition-all shadow-xs">
+                <span>${isUrdu ? 'ٹرائل لیں' : 'Book Trial'}</span>
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderCurrentPageDynamicContent(isUrdu) {
+      renderGalleryItems();
+    }
+  </script>
+</body>
+</html>

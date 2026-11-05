@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Management Portal | Q Islamic Academy</title>
+  <meta name="description" content="Secure administrative dashboard for Q Islamic Academy. Manage courses, public video gallery, and student admission inquiries.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              800: '#064e3b',
+              900: '#022c22',
+              950: '#011c15',
+            },
+            gold: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              900: '#041329',
+              950: '#020b18',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Plus Jakarta Sans', 'sans-serif'],
+            urdu: ['"Jameel Noori Nastaleeq"', '"Noto Nastaliq Urdu"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F8F9FA] dark:bg-[#030914] text-slate-800 dark:text-slate-100 antialiased min-h-screen">
+
+  <!-- =================================================================
+       1. LOGIN OVERLAY (PASSWORD PROTECTED)
+       ================================================================= -->
+  <div id="loginGate" class="fixed inset-0 z-50 bg-forest-950 flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white dark:bg-[#07152B] rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-2xl text-center space-y-6">
+      <div class="flex justify-center">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-12 w-auto">
+      </div>
+      <div>
+        <h2 class="text-xl font-extrabold text-navy-950 dark:text-white">Admin Management Portal</h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Please enter your academy administrator password to manage videos and inquiries.</p>
+      </div>
+
+      <form onsubmit="handleAdminLogin(event)" class="space-y-4 text-left">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Admin Password</label>
+          <div class="relative">
+            <i class="fa-solid fa-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+            <input type="password" id="adminPasswordInput" required placeholder="Enter password (default: admin123)" class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+          </div>
+        </div>
+        <div id="loginErrorMsg" class="hidden text-xs text-rose-500 font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span>Incorrect password. Please try again.</span>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer flex items-center justify-center gap-2">
+          <i class="fa-solid fa-shield-halved text-gold-400"></i>
+          <span>Unlock Admin Panel</span>
+        </button>
+      </form>
+
+      <div class="text-[11px] text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center">
+        <span>Default password: <strong class="text-emerald-600 dark:text-gold-400 font-mono">admin123</strong></span>
+        <a href="index.html" class="hover:underline">Back to Website &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. ADMIN TOP NAVBAR
+       ================================================================= -->
+  <header class="sticky top-0 z-40 bg-white dark:bg-[#07152B] border-b border-slate-200 dark:border-slate-800 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/q-islamic-logo.png" alt="Logo" class="h-9 w-auto">
+        <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold text-xs border border-emerald-500/20">
+          Admin Portal
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs">
+        <a href="index.html" target="_blank" class="px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-bold transition-all flex items-center gap-1.5">
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          <span>View Public Website</span>
+        </a>
+        <button onclick="handleAdminLogout()" class="px-3 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 font-bold transition-all flex items-center gap-1.5 cursor-pointer">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. MAIN ADMIN DASHBOARD
+       ================================================================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    
+    <!-- Quick Statistics Strip -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="p-5 rounded-2xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-xs">
+        <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Total Inquiries</div>
+        <div id="statInquiriesCount" class="text-2xl sm:text-3xl font-extrabold text-navy-950 dark:text-white mt-1">0</div>
+        <div class="text-[11px] text-emerald-500 font-semibold mt-0.5"><i class="fa-solid fa-check mr-1"></i>Live synced</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-xs">
+        <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Video &amp; Audio Demos</div>
+        <div id="statVideosCount" class="text-2xl sm:text-3xl font-extrabold text-navy-950 dark:text-white mt-1">0</div>
+        <div class="text-[11px] text-emerald-500 font-semibold mt-0.5"><i class="fa-solid fa-film mr-1"></i>Gallery items</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-xs">
+        <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Active Courses</div>
+        <div class="text-2xl sm:text-3xl font-extrabold text-navy-950 dark:text-white mt-1">10</div>
+        <div class="text-[11px] text-slate-400 font-semibold mt-0.5">3 Regular + 7 30-Day</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-xs">
+        <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Regional Desks</div>
+        <div class="text-2xl sm:text-3xl font-extrabold text-navy-950 dark:text-white mt-1">8</div>
+        <div class="text-[11px] text-slate-400 font-semibold mt-0.5">Global operations</div>
+      </div>
+    </div>
+
+    <!-- Section: Add New Video / Demo -->
+    <section class="bg-white dark:bg-[#07152B] rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-xs space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-slate-100 dark:border-slate-800">
+        <div>
+          <span class="text-xs font-bold text-emerald-600 dark:text-gold-400 uppercase tracking-wider">Public Gallery Management</span>
+          <h2 class="text-lg sm:text-xl font-bold text-navy-950 dark:text-white mt-0.5">Add New Public Teaching Video or Audio Demo</h2>
+        </div>
+        <span class="text-xs text-slate-500">Adds immediately to public gallery</span>
+      </div>
+
+      <form id="addMediaForm" onsubmit="handleAddNewMedia(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Media Type *</label>
+            <select id="mediaType" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+              <option value="video">Public Teaching Video Demo</option>
+              <option value="audio">Audio Recitation Demo</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Category *</label>
+            <select id="mediaCategory" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+              <option value="tajweed">Tajweed Mastery (تجوید و مخارج)</option>
+              <option value="qaida">Noorani Qaida (نورانی قاعدہ)</option>
+              <option value="maqamaat">8 Lahjaat &amp; Maqamaat (لہجات)</option>
+              <option value="arabic">Arabic Grammar (عربی گرامر)</option>
+              <option value="kids">Kids &amp; Sisters (بچے و خواتین)</option>
+              <option value="recitation">Audio Recitations (تلاوتِ قرآن)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Teacher / Qari Name *</label>
+            <input type="text" id="mediaTeacher" required placeholder="e.g. Maulana Qari Hameedullah Qureshi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Title (English) *</label>
+            <input type="text" id="mediaTitleEn" required placeholder="e.g. Live Makhraj Correction of Letter Qaf" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Title (Urdu) *</label>
+            <input type="text" id="mediaTitleUr" required placeholder="مثال: حرفِ قاف کے مخرج اور صفات کی درست ادائیگی" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600 font-urdu">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="sm:col-span-2">
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Video URL (YouTube or Direct Video/Audio URL) *</label>
+            <input type="url" id="mediaUrl" required placeholder="https://www.youtube.com/watch?v=... or https://youtube.com/embed/..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+            <p class="text-[11px] text-slate-400 mt-1">Normal YouTube links will be converted automatically to embed player format.</p>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Duration (e.g. 12:30)</label>
+            <input type="text" id="mediaDuration" placeholder="10:15" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600 font-mono">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Short Description</label>
+          <input type="text" id="mediaDesc" placeholder="Brief summary of the lesson concepts demonstrated..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 text-xs sm:text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:border-emerald-600">
+        </div>
+
+        <!-- Feedback Msg -->
+        <div id="mediaAddedSuccess" class="hidden p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+          <i class="fa-solid fa-circle-check mr-1.5"></i> Demonstration video successfully published to Public Gallery!
+        </div>
+
+        <button type="submit" class="px-6 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer flex items-center gap-2">
+          <i class="fa-solid fa-plus text-gold-400"></i>
+          <span>Publish Demonstration to Gallery</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- Section: Existing Videos List -->
+    <section class="bg-white dark:bg-[#07152B] rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h3 class="text-base font-bold text-navy-950 dark:text-white flex items-center gap-2">
+          <i class="fa-solid fa-video text-emerald-600 dark:text-gold-400"></i>
+          <span>Published Public Recordings (<span id="totalMediaCountLabel">0</span>)</span>
+        </h3>
+        <span class="text-xs text-slate-400">Manage, preview or delete</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs text-slate-600 dark:text-slate-300">
+          <thead class="bg-slate-50 dark:bg-navy-900 text-slate-500 uppercase text-[10px] font-bold">
+            <tr>
+              <th class="p-3">Type</th>
+              <th class="p-3">Title &amp; Qari</th>
+              <th class="p-3">Category</th>
+              <th class="p-3">Duration</th>
+              <th class="p-3 text-right">Action</th>
+            </tr>
+          </thead>
+          <tbody id="adminMediaTableBody" class="divide-y divide-slate-100 dark:divide-slate-800">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section: Admission Inquiries Inbox -->
+    <section class="bg-white dark:bg-[#07152B] rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
+        <div>
+          <span class="text-xs font-bold text-emerald-600 dark:text-gold-400 uppercase tracking-wider">Student Lead Management</span>
+          <h3 class="text-lg font-bold text-navy-950 dark:text-white mt-0.5">
+            Admission Inquiries &amp; Messages (<span id="totalInquiriesCountLabel">0</span>)
+          </h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="exportInquiriesCSV()" class="px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer">
+            <i class="fa-solid fa-file-csv text-emerald-600"></i>
+            <span>Export to CSV</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs text-slate-600 dark:text-slate-300">
+          <thead class="bg-slate-50 dark:bg-navy-900 text-slate-500 uppercase text-[10px] font-bold">
+            <tr>
+              <th class="p-3">Date</th>
+              <th class="p-3">Student Name</th>
+              <th class="p-3">WhatsApp / Phone</th>
+              <th class="p-3">Country</th>
+              <th class="p-3">Selected Course</th>
+              <th class="p-3">Status</th>
+              <th class="p-3 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="adminInquiriesTableBody" class="divide-y divide-slate-100 dark:divide-slate-800">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Video Preview Modal -->
+  <div id="adminVideoModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative w-full max-w-3xl bg-slate-950 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+      <div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-800">
+        <span id="adminVideoModalTitle" class="text-white font-bold text-xs truncate">Demonstration Preview</span>
+        <button onclick="closeAdminVideoModal()" class="size-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="relative aspect-video w-full bg-black">
+        <iframe id="adminVideoIframe" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script>
+    // Authentication
+    const ADMIN_AUTH_KEY = 'q_admin_session_auth';
+
+    function checkAuth() {
+      const isAuth = sessionStorage.getItem(ADMIN_AUTH_KEY);
+      const gate = document.getElementById('loginGate');
+      if (isAuth === 'true') {
+        if (gate) gate.classList.add('hidden');
+        renderAdminDashboard();
+      } else {
+        if (gate) gate.classList.remove('hidden');
+      }
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const pwd = document.getElementById('adminPasswordInput').value.trim();
+      const err = document.getElementById('loginErrorMsg');
+
+      if (pwd === 'admin123') {
+        sessionStorage.setItem(ADMIN_AUTH_KEY, 'true');
+        if (err) err.classList.add('hidden');
+        checkAuth();
+      } else {
+        if (err) err.classList.remove('hidden');
+      }
+    }
+
+    function handleAdminLogout() {
+      sessionStorage.removeItem(ADMIN_AUTH_KEY);
+      location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuth();
+    });
+
+    // Helper: convert youtube url to embed format
+    function normalizeVideoUrl(url) {
+      if (!url) return '';
+      if (url.includes('youtube.com/watch?v=')) {
+        const videoId = url.split('v=')[1]?.split('&')[0];
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+      if (url.includes('youtu.be/')) {
+        const videoId = url.split('youtu.be/')[1]?.split('?')[0];
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+      return url;
+    }
+
+    // Add new media
+    function handleAddNewMedia(e) {
+      e.preventDefault();
+      const type = document.getElementById('mediaType').value;
+      const category = document.getElementById('mediaCategory').value;
+      const teacher = document.getElementById('mediaTeacher').value.trim();
+      const titleEn = document.getElementById('mediaTitleEn').value.trim();
+      const titleUr = document.getElementById('mediaTitleUr').value.trim();
+      const rawUrl = document.getElementById('mediaUrl').value.trim();
+      const duration = document.getElementById('mediaDuration').value.trim() || '10:00';
+      const desc = document.getElementById('mediaDesc').value.trim() || titleEn;
+
+      const videoUrl = normalizeVideoUrl(rawUrl);
+
+      const newItem = {
+        id: 'v_' + Date.now(),
+        type: type,
+        titleEn: titleEn,
+        titleUr: titleUr,
+        descEn: desc,
+        descUr: desc,
+        category: category,
+        categoryLabelEn: category.toUpperCase(),
+        categoryLabelUr: category,
+        teacherEn: teacher,
+        teacherUr: teacher,
+        duration: duration,
+        date: new Date().toISOString().split('T')[0],
+        thumbnail: type === 'audio' ? 'assets/adult-quran-student.jpg' : 'assets/c4_tajweed.jpg',
+        videoUrl: videoUrl,
+        audioUrl: videoUrl,
+        featured: false
+      };
+
+      if (window.Q_STORE && window.Q_STORE.addGalleryItem) {
+        window.Q_STORE.addGalleryItem(newItem);
+      } else {
+        const gallery = JSON.parse(localStorage.getItem('q_academy_gallery') || '[]');
+        gallery.unshift(newItem);
+        localStorage.setItem('q_academy_gallery', JSON.stringify(gallery));
+      }
+
+      // Show success
+      const msg = document.getElementById('mediaAddedSuccess');
+      if (msg) {
+        msg.classList.remove('hidden');
+        setTimeout(() => msg.classList.add('hidden'), 4000);
+      }
+
+      document.getElementById('addMediaForm').reset();
+      renderAdminDashboard();
+    }
+
+    function renderAdminDashboard() {
+      renderMediaTable();
+      renderInquiriesTable();
+    }
+
+    function renderMediaTable() {
+      const tbody = document.getElementById('adminMediaTableBody');
+      const countLabel = document.getElementById('totalMediaCountLabel');
+      const statLabel = document.getElementById('statVideosCount');
+      if (!tbody) return;
+
+      const gallery = window.Q_STORE ? window.Q_STORE.getGallery() : (ACADEMY_DATA.gallery || []);
+      
+      if (countLabel) countLabel.textContent = gallery.length;
+      if (statLabel) statLabel.textContent = gallery.length;
+
+      tbody.innerHTML = gallery.map(item => `
+        <tr class="hover:bg-slate-50 dark:hover:bg-navy-900/60 transition-colors">
+          <td class="p-3 font-bold">
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] ${item.type === 'audio' ? 'bg-amber-500/10 text-amber-600' : 'bg-emerald-500/10 text-emerald-600'}">
+              <i class="fa-solid ${item.type === 'audio' ? 'fa-headphones' : 'fa-film'}"></i>
+              <span>${item.type.toUpperCase()}</span>
+            </span>
+          </td>
+          <td class="p-3">
+            <div class="font-bold text-navy-950 dark:text-white line-clamp-1">${item.titleEn}</div>
+            <div class="text-[11px] text-slate-400 font-urdu line-clamp-1">${item.titleUr || ''}</div>
+            <div class="text-[10px] text-emerald-600 dark:text-gold-400 mt-0.5"><i class="fa-solid fa-user-tie mr-1"></i>${item.teacherEn || 'Instructor'}</div>
+          </td>
+          <td class="p-3 font-mono text-[11px] text-slate-500">${item.category || 'General'}</td>
+          <td class="p-3 font-mono text-[11px] text-slate-500">${item.duration || '--:--'}</td>
+          <td class="p-3 text-right space-x-2">
+            <button onclick="previewAdminVideo('${item.videoUrl || item.audioUrl}', '${item.titleEn.replace(/'/g, "\\'")}')" class="px-2 py-1 rounded-lg bg-emerald-600/10 hover:bg-emerald-600 text-emerald-600 hover:text-white font-bold text-[11px] transition-colors cursor-pointer" title="Preview Demo">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button onclick="deleteGalleryItem('${item.id}')" class="px-2 py-1 rounded-lg bg-rose-500/10 hover:bg-rose-500 text-rose-600 hover:text-white font-bold text-[11px] transition-colors cursor-pointer" title="Delete">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function previewAdminVideo(url, title) {
+      const modal = document.getElementById('adminVideoModal');
+      const iframe = document.getElementById('adminVideoIframe');
+      const titleElem = document.getElementById('adminVideoModalTitle');
+      if (modal && iframe) {
+        iframe.src = url;
+        if (titleElem) titleElem.textContent = title;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeAdminVideoModal() {
+      const modal = document.getElementById('adminVideoModal');
+      const iframe = document.getElementById('adminVideoIframe');
+      if (modal && iframe) {
+        iframe.src = '';
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function deleteGalleryItem(id) {
+      if (!confirm('Are you sure you want to delete this demonstration from the public gallery?')) return;
+      if (window.Q_STORE && window.Q_STORE.deleteGalleryItem) {
+        window.Q_STORE.deleteGalleryItem(id);
+      }
+      renderAdminDashboard();
+    }
+
+    function renderInquiriesTable() {
+      const tbody = document.getElementById('adminInquiriesTableBody');
+      const countLabel = document.getElementById('totalInquiriesCountLabel');
+      const statLabel = document.getElementById('statInquiriesCount');
+      if (!tbody) return;
+
+      const inquiries = window.Q_STORE ? window.Q_STORE.getInquiries() : [];
+      
+      if (countLabel) countLabel.textContent = inquiries.length;
+      if (statLabel) statLabel.textContent = inquiries.length;
+
+      if (inquiries.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-slate-400">No student inquiries received yet. Submit a test admission form to see it here.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = inquiries.map(inq => {
+        const waMsg = encodeURIComponent(`Assalam-o-Alaikum ${inq.name}, thank you for contacting Q Islamic Academy regarding ${inq.course || 'Quran classes'}. How can we assist you?`);
+        const cleanPhone = (inq.phone || '').replace(/\D/g, '');
+
+        return `
+          <tr class="hover:bg-slate-50 dark:hover:bg-navy-900/60 transition-colors">
+            <td class="p-3 font-mono text-[11px] text-slate-400">${inq.date || 'Recent'}</td>
+            <td class="p-3 font-bold text-navy-950 dark:text-white">
+              ${inq.name}
+              ${inq.forWhom ? `<div class="text-[10px] text-slate-400 font-normal">For: ${inq.forWhom}</div>` : ''}
+            </td>
+            <td class="p-3 font-mono text-[11px]">${inq.phone}</td>
+            <td class="p-3 text-[11px]">${inq.country || '--'}</td>
+            <td class="p-3 text-[11px] font-semibold text-emerald-600 dark:text-gold-400 line-clamp-1">${inq.course || 'General'}</td>
+            <td class="p-3">
+              <select onchange="updateInquiryStatus('${inq.id}', this.value)" class="text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-200">
+                <option value="New" ${inq.status === 'New' ? 'selected' : ''}>New</option>
+                <option value="Contacted" ${inq.status === 'Contacted' ? 'selected' : ''}>Contacted</option>
+                <option value="Enrolled" ${inq.status === 'Enrolled' ? 'selected' : ''}>Enrolled</option>
+                <option value="Archived" ${inq.status === 'Archived' ? 'selected' : ''}>Archived</option>
+              </select>
+            </td>
+            <td class="p-3 text-right space-x-2">
+              <a href="https://wa.me/${cleanPhone}?text=${waMsg}" target="_blank" class="px-2.5 py-1 rounded-lg bg-emerald-600 text-white font-bold text-[11px] hover:bg-emerald-500 transition-colors inline-flex items-center gap-1" title="Open WhatsApp Chat">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+              <button onclick="deleteInquiry('${inq.id}')" class="px-2 py-1 rounded-lg bg-rose-500/10 hover:bg-rose-500 text-rose-600 hover:text-white font-bold text-[11px] transition-colors cursor-pointer" title="Delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function updateInquiryStatus(id, newStatus) {
+      if (window.Q_STORE && window.Q_STORE.updateInquiryStatus) {
+        window.Q_STORE.updateInquiryStatus(id, newStatus);
+      }
+    }
+
+    function deleteInquiry(id) {
+      if (!confirm('Are you sure you want to remove this inquiry?')) return;
+      if (window.Q_STORE && window.Q_STORE.deleteInquiry) {
+        window.Q_STORE.deleteInquiry(id);
+      }
+      renderAdminDashboard();
+    }
+
+    function exportInquiriesCSV() {
+      const inquiries = window.Q_STORE ? window.Q_STORE.getInquiries() : [];
+      if (inquiries.length === 0) {
+        alert('No inquiries to export.');
+        return;
+      }
+
+      let csv = 'ID,Date,Name,Phone,Country,Course,Status,Notes\n';
+      inquiries.forEach(i => {
+        csv += `"${i.id}","${i.date || ''}","${(i.name || '').replace(/"/g, '""')}","${i.phone || ''}","${i.country || ''}","${(i.course || '').replace(/"/g, '""')}","${i.status || ''}","${(i.notes || '').replace(/"/g, '""')}"\n`;
+      });
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `q_islamic_academy_inquiries_${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
+</html>

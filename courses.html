@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All 10 Islamic Courses | Q Islamic Academy</title>
+  <meta name="description" content="Explore all 10 verified online Islamic and Quran courses at Q Islamic Academy. 1-on-1 live classes with certified male scholars and female tutors.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              800: '#064e3b',
+              900: '#022c22',
+              950: '#011c15',
+            },
+            emeraldBrand: {
+              500: '#059669',
+              600: '#047857',
+              700: '#065f46',
+            },
+            ivory: {
+              50: '#fcfbf7',
+              100: '#f8f7f2',
+            },
+            gold: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              900: '#041329',
+              950: '#020b18',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Plus Jakarta Sans', 'sans-serif'],
+            urdu: ['"Jameel Noori Nastaleeq"', '"Noto Nastaliq Urdu"', 'serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en bg-[#FCFBF7] dark:bg-[#040D1A] text-slate-800 dark:text-slate-100 antialiased selection:bg-emerald-600 selection:text-white transition-colors duration-300">
+
+  <!-- =================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ================================================================= -->
+  <div class="bg-forest-950 text-white text-xs py-2 px-3 sm:px-6 border-b border-forest-900/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-bold text-[11px] border border-gold-500/30">
+          <i class="fa-solid fa-star text-[9px]"></i>
+          <span class="en-only">Admissions Open</span>
+          <span class="ur-only">داخلے جاری ہیں</span>
+        </span>
+        <span class="text-slate-300 text-xs">
+          <span class="en-only">10 Comprehensive Courses — Opportunity to complete most courses in approx. 30 days</span>
+          <span class="ur-only">10 جامع اسلامی کورسز — زیادہ تر کورسز تقریباً 30 دن میں مکمل کرنے کا سنہری موقع</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs">
+        <a href="https://wa.me/923118284694" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition-colors">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>+92 311 8284694</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVIGATION BAR
+       ================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#051329]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="shrink-0 flex items-center gap-2 group">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy Logo" class="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-102">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-xs xl:text-sm font-bold text-slate-700 dark:text-slate-200">
+        <a href="index.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="home">Home</a>
+        <a href="about.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="about.html">About</a>
+        <a href="courses.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="courses.html">Courses</a>
+        <a href="teachers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="teachers.html">Our Teachers</a>
+        <a href="method.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="method.html">Teaching Method</a>
+        <a href="gallery.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="gallery.html">Gallery</a>
+        <a href="centers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="centers.html">Our Centers</a>
+        <a href="admission.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="admission.html">Admission</a>
+        <a href="contact.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Theme Toggle -->
+        <button onclick="toggleTheme()" class="size-8 sm:size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-amber-300 flex items-center justify-center border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-xs" title="Toggle Dark/Light Mode">
+          <i id="themeIcon" class="fa-solid fa-moon text-xs sm:text-sm"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button onclick="toggleLanguage()" class="h-8 px-2.5 sm:h-9 sm:px-3 rounded-xl bg-gold-500/15 hover:bg-gold-500/25 text-gold-700 dark:text-gold-300 transition-all flex items-center gap-1 font-bold text-xs border border-gold-500/30 cursor-pointer shadow-xs" title="Toggle Language">
+          <i class="fa-solid fa-globe text-xs"></i>
+          <span id="langLabel">اردو</span>
+        </button>
+
+        <!-- Quick Trial Button -->
+        <button onclick="openTrialModal()" class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-forest-800 hover:from-emerald-500 hover:to-forest-900 text-white font-bold text-xs shadow-md transition-all cursor-pointer">
+          <i class="fa-solid fa-gift text-xs"></i>
+          <span>Free Trial</span>
+        </button>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center border border-slate-200 dark:border-slate-700 cursor-pointer" aria-label="Open Menu">
+          <i class="fa-solid fa-bars text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobileNavDrawer" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-md flex flex-col justify-between p-5 text-start">
+    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+      <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-9 w-auto">
+      <button onclick="closeMobileMenu()" class="size-8 rounded-full bg-slate-800 text-white flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+    </div>
+
+    <nav class="flex flex-col space-y-3 py-6 text-sm font-bold text-slate-200 overflow-y-auto">
+      <a href="index.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Home</a>
+      <a href="about.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">About Academy</a>
+      <a href="courses.html" class="py-2 px-3 rounded-lg bg-emerald-600 text-white" onclick="closeMobileMenu()">Our 10 Courses</a>
+      <a href="teachers.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Our Teachers &amp; Qaris</a>
+      <a href="method.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Teaching Methodology</a>
+      <a href="gallery.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Public Video Gallery</a>
+      <a href="centers.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Our 8 Regional Centers</a>
+      <a href="admission.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Admission Form</a>
+      <a href="contact.html" class="py-2 px-3 rounded-lg hover:bg-white/10" onclick="closeMobileMenu()">Contact &amp; Support</a>
+      <a href="admin.html" class="py-2 px-3 rounded-lg text-gold-400 hover:bg-white/10 flex items-center gap-2" onclick="closeMobileMenu()">
+        <i class="fa-solid fa-lock text-xs"></i>
+        <span>Admin Portal</span>
+      </a>
+    </nav>
+
+    <div class="border-t border-slate-800 pt-4 flex items-center justify-between gap-3">
+      <a href="admission.html" class="flex-1 py-3 text-center rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-md">
+        Apply for Admission
+      </a>
+      <a href="https://wa.me/923118284694" target="_blank" class="size-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-lg">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       3. COURSES HERO BANNER
+       ================================================================= -->
+  <section class="relative py-12 sm:py-16 px-4 bg-gradient-to-b from-forest-950 via-navy-950 to-slate-900 text-white text-center overflow-hidden border-b border-forest-900/60">
+    <div class="absolute inset-0 opacity-10 islamic-pattern-bg"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+      <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-gold-500/20 text-gold-300 font-bold text-xs uppercase tracking-widest border border-gold-500/30 mb-3">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Official Curriculum &amp; Syllabi</span>
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3">
+        <span class="en-only">10 Comprehensive Islamic Courses</span>
+        <span class="ur-only text-4xl sm:text-5xl">10 جامع اسلامی کورسز</span>
+      </h1>
+
+      <p class="text-slate-300 text-sm sm:text-lg max-w-2xl leading-relaxed">
+        <span class="en-only">Structured curriculum designed for all ages — with the opportunity to complete most courses in approximately 30 days under certified male scholars and female tutors.</span>
+        <span class="ur-only text-base sm:text-xl">قرآن و سنت کی مستند و منظم تعلیم — زیادہ تر کورسز تقریباً 30 دن میں مکمل کرنے کا سنہری موقع!</span>
+      </p>
+
+      <!-- Trust highlights -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mt-6 text-xs sm:text-sm text-gold-300 font-semibold">
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+          <i class="fa-solid fa-gift text-emerald-400"></i> Free 3-Day Trial
+        </span>
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+          <i class="fa-solid fa-user-shield text-teal-400"></i> Male &amp; Female Tutors in Purdah
+        </span>
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+          <i class="fa-solid fa-clock text-amber-400"></i> 24/7 Global Flexible Hours
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. COURSES CATALOG CONTAINER & FILTERS
+       ================================================================= -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    
+    <!-- Controls Bar: Search & Category Filter -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+      
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+        <button onclick="setCourseCategory('all', this)" class="course-cat-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-forest-800 text-white shadow-xs transition-all cursor-pointer">
+          All 10 Courses
+        </button>
+        <button onclick="setCourseCategory('core', this)" class="course-cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all cursor-pointer">
+          Core Quran Programs
+        </button>
+        <button onclick="setCourseCategory('tajweed', this)" class="course-cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all cursor-pointer">
+          Tajweed &amp; Maqamaat
+        </button>
+        <button onclick="setCourseCategory('islamic', this)" class="course-cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white dark:bg-navy-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all cursor-pointer">
+          Islamic &amp; Arabic Studies
+        </button>
+      </div>
+
+      <!-- Search Input -->
+      <div class="w-full md:w-72 relative">
+        <input type="text" id="courseSearchInput" onkeyup="filterCoursesSearch()" placeholder="Search courses or topics..." class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-xs sm:text-sm outline-none focus:border-emerald-600 dark:focus:border-emerald-500 text-slate-900 dark:text-white shadow-xs">
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400 text-xs"></i>
+      </div>
+
+    </div>
+
+    <!-- Courses Grid -->
+    <div id="fullCoursesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Injected by JavaScript dynamically from Q_STORE / ACADEMY_DATA -->
+    </div>
+
+    <!-- Empty search state -->
+    <div id="noCoursesFound" class="hidden text-center py-16">
+      <div class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 flex items-center justify-center mx-auto mb-3 text-2xl">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <h3 class="font-bold text-lg text-slate-700 dark:text-slate-200">No courses match your search</h3>
+      <p class="text-xs text-slate-500 mt-1">Try searching for "Tajweed", "Hifz", "Arabic", or "Duas".</p>
+    </div>
+
+  </main>
+
+  <!-- =================================================================
+       5. ADMISSION CTA BANNER
+       ================================================================= -->
+  <section class="bg-gradient-to-r from-forest-950 via-forest-900 to-navy-950 text-white py-12 px-4 border-t border-forest-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">Ready to Start with a Free 3-Day Trial?</h2>
+      <p class="text-slate-300 text-xs sm:text-sm mb-6 max-w-xl mx-auto">Zero advance commitment. Test our teacher recitation, patience, and interactive screen-sharing methodology before regular enrollment.</p>
+      
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="admission.html" class="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold text-sm shadow-md transition-all">
+          <i class="fa-solid fa-file-signature mr-1.5"></i> Fill Admission Form
+        </a>
+        <a href="https://wa.me/923118284694" target="_blank" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 backdrop-blur-md transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp Helpdesk
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. GLOBAL FOOTER
+       ================================================================= -->
+  <footer class="bg-navy-950 text-slate-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-start">
+      
+      <!-- Col 1: About -->
+      <div>
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-10 w-auto mb-3">
+        <p class="text-slate-400 leading-relaxed mb-3">
+          Q Islamic Academy is an authentic, international online Quran academy dedicated to teaching children, adults, and sisters with certified scholars and female tutors worldwide.
+        </p>
+        <div class="text-gold-400 font-arabic text-sm">”اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ“</div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div>
+        <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-3">Explore Academy</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About Academy</a></li>
+          <li><a href="courses.html" class="hover:text-emerald-400 transition-colors">All 10 Courses</a></li>
+          <li><a href="teachers.html" class="hover:text-emerald-400 transition-colors">Certified Teachers</a></li>
+          <li><a href="method.html" class="hover:text-emerald-400 transition-colors">Teaching Methodology</a></li>
+          <li><a href="gallery.html" class="hover:text-emerald-400 transition-colors">Public Video Gallery</a></li>
+          <li><a href="centers.html" class="hover:text-emerald-400 transition-colors">8 Regional Centers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Core Courses -->
+      <div>
+        <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-3">Top Programs</h4>
+        <ul class="space-y-2">
+          <li><a href="admission.html?course=1" class="hover:text-gold-400">Easy Qur'an Reading Course</a></li>
+          <li><a href="admission.html?course=2" class="hover:text-gold-400">Easy Qur'an Memorisation Course</a></li>
+          <li><a href="admission.html?course=3" class="hover:text-gold-400">Easy Tajweed Course</a></li>
+          <li><a href="admission.html?course=4" class="hover:text-gold-400">8 Lahjaat &amp; Maqamaat</a></li>
+          <li><a href="admission.html?course=6" class="hover:text-gold-400">Qur'anic Arabic Grammar</a></li>
+          <li><a href="admission.html?course=8" class="hover:text-gold-400">Seerah of Prophet ﷺ</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Support -->
+      <div>
+        <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-3">Headquarters &amp; Support</h4>
+        <div class="space-y-2 text-slate-300">
+          <p><i class="fa-solid fa-location-dot text-emerald-400 mr-2"></i>Karachi, Pakistan (Central HQ)</p>
+          <p><i class="fa-solid fa-phone text-emerald-400 mr-2"></i><span class="phone-ltr">+92 311 8284694</span></p>
+          <p><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i><a href="https://wa.me/923118284694" target="_blank" class="hover:underline">Chat on WhatsApp</a></p>
+          <p><i class="fa-solid fa-envelope text-emerald-400 mr-2"></i>admissions@qislamicacademy.com</p>
+          <p class="pt-2"><a href="admin.html" class="text-gold-400 hover:underline flex items-center gap-1.5"><i class="fa-solid fa-shield-halved"></i> Administrator Login</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500">
+      <p>&copy; 2026 Q Islamic Academy. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://youtube.com/@qislamicacademy1" target="_blank" class="hover:text-red-400 text-sm"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://facebook.com/QIslamicAcademy" target="_blank" class="hover:text-blue-400 text-sm"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://tiktok.com/@qislamicadedmy" target="_blank" class="hover:text-pink-400 text-sm"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/923118284694" target="_blank" class="hover:text-emerald-400 text-sm"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Course Details Modal -->
+  <div id="courseModal" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-md p-3 sm:p-6 flex items-center justify-center">
+    <div class="bg-white dark:bg-navy-950 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-7 shadow-2xl relative text-start">
+      <button onclick="closeCourseModal()" class="absolute top-4 right-4 size-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center hover:bg-red-500 hover:text-white transition-all cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="courseModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Quick Trial Modal -->
+  <div id="trialModal" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-md p-3 sm:p-6 flex items-center justify-center">
+    <div class="bg-white dark:bg-navy-950 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-md w-full p-6 shadow-2xl relative text-start">
+      <button onclick="closeTrialModal()" class="absolute top-4 right-4 size-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center hover:bg-red-500 hover:text-white transition-all cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="mb-4">
+        <span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950 px-2.5 py-0.5 rounded-full mb-1">
+          <i class="fa-solid fa-gift"></i> 100% Free Trial
+        </span>
+        <h3 class="text-xl font-bold text-navy-900 dark:text-white">Book 3-Day Free Trial</h3>
+        <p class="text-xs text-slate-500">Provide your contact info to schedule your evaluation class.</p>
+      </div>
+
+      <form onsubmit="handleModalTrialSubmit(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Student / Parent Name *</label>
+          <input type="text" id="modalStudentName" required placeholder="e.g. Tariq Mahmood" class="w-full px-3.5 py-2 text-xs sm:text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 outline-none focus:border-emerald-600 dark:text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">WhatsApp Number *</label>
+          <input type="tel" id="modalStudentPhone" required placeholder="+92 311 8284694" class="w-full px-3.5 py-2 text-xs sm:text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 outline-none focus:border-emerald-600 dark:text-white phone-ltr">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Desired Course</label>
+          <select id="modalCourseSelect" class="w-full px-3.5 py-2 text-xs sm:text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 outline-none focus:border-emerald-600 dark:text-white">
+            <option value="1. Easy Qur'an Reading Course">1. Easy Qur'an Reading Course</option>
+            <option value="2. Easy Qur'an Memorisation Course">2. Easy Qur'an Memorisation Course</option>
+            <option value="3. Easy Tajweed Course">3. Easy Tajweed Course</option>
+            <option value="4. Easy 8 Lahjaat & Maqamaat">4. Easy 8 Lahjaat &amp; Maqamaat</option>
+            <option value="5. Easy Qur'an Tafsir Course">5. Easy Qur'an Tafsir Course</option>
+            <option value="6. Easy Qur'anic Arabic Grammar">6. Easy Qur'anic Arabic Grammar</option>
+            <option value="7. Easy Message of the Qur'an">7. Easy Message of the Qur'an</option>
+            <option value="8. Easy Seerah of the Prophet ﷺ">8. Easy Seerah of the Prophet ﷺ</option>
+            <option value="9. Easy Finality of Prophethood">9. Easy Finality of Prophethood</option>
+            <option value="10. Easy Collection of Hadith">10. Easy Collection of Hadith</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Preferred Time</label>
+          <select id="modalTiming" class="w-full px-3.5 py-2 text-xs sm:text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-900 outline-none focus:border-emerald-600 dark:text-white">
+            <option value="Morning">Morning (8 AM - 12 PM)</option>
+            <option value="Afternoon">Afternoon (12 PM - 4 PM)</option>
+            <option value="Evening" selected>Evening (4 PM - 8 PM)</option>
+            <option value="Night">Night (8 PM - 12 AM)</option>
+            <option value="Flexible">Any Flexible Time (24/7)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer">
+          Confirm Free Trial Booking &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    let activeCat = 'all';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCoursesCatalog();
+    });
+
+    function setCourseCategory(cat, btn) {
+      activeCat = cat;
+      document.querySelectorAll('.course-cat-btn').forEach(b => {
+        b.classList.remove('bg-forest-800', 'text-white');
+        b.classList.add('bg-white', 'dark:bg-navy-900', 'text-slate-700', 'dark:text-slate-300');
+      });
+      if (btn) {
+        btn.classList.add('bg-forest-800', 'text-white');
+        btn.classList.remove('bg-white', 'dark:bg-navy-900', 'text-slate-700', 'dark:text-slate-300');
+      }
+      renderCoursesCatalog();
+    }
+
+    function filterCoursesSearch() {
+      renderCoursesCatalog();
+    }
+
+    function renderCoursesCatalog() {
+      const grid = document.getElementById('fullCoursesGrid');
+      const emptyState = document.getElementById('noCoursesFound');
+      if (!grid) return;
+
+      const courses = window.Q_STORE ? window.Q_STORE.getCourses() : ACADEMY_DATA.courses;
+      const searchVal = (document.getElementById('courseSearchInput')?.value || '').toLowerCase().trim();
+      const isUrdu = currentLang === 'ur';
+
+      let filtered = courses;
+
+      // Filter by category
+      if (activeCat === 'core') {
+        filtered = filtered.filter(c => c.isOngoing || c.category === 'quran');
+      } else if (activeCat === 'tajweed') {
+        filtered = filtered.filter(c => c.category === 'tajweed');
+      } else if (activeCat === 'islamic') {
+        filtered = filtered.filter(c => c.category === 'arabic' || c.category === 'islamic' || c.category === 'hadith');
+      }
+
+      // Filter by search text
+      if (searchVal) {
+        filtered = filtered.filter(c => {
+          const tEn = (c.titleEn || '').toLowerCase();
+          const tUr = (c.titleUr || '').toLowerCase();
+          const iEn = (c.introEn || '').toLowerCase();
+          const iUr = (c.introUr || '').toLowerCase();
+          const topics = (c.topicsEn || []).join(' ').toLowerCase();
+          return tEn.includes(searchVal) || tUr.includes(searchVal) || iEn.includes(searchVal) || iUr.includes(searchVal) || topics.includes(searchVal);
+        });
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+      if (emptyState) emptyState.classList.add('hidden');
+
+      grid.innerHTML = filtered.map(c => {
+        const title = isUrdu ? c.titleUr : c.titleEn;
+        const intro = isUrdu ? c.introUr : c.introEn;
+        const badge = isUrdu ? c.badgeUr : c.badgeEn;
+        const duration = isUrdu ? c.durationUr : c.durationEn;
+        const topics = isUrdu ? c.topicsUr : c.topicsEn;
+        const top3Topics = (topics || []).slice(0, 3);
+
+        const badgeColor = c.isOngoing 
+          ? 'bg-gold-500/15 text-gold-700 dark:text-gold-300 border-gold-500/30' 
+          : 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border-emerald-500/30';
+
+        return `
+          <div class="course-card rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+            <div>
+              <!-- Course Visual Thumbnail -->
+              <div class="relative h-48 sm:h-52 overflow-hidden bg-slate-900">
+                <img src="${c.image}" alt="${title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute top-3 left-3">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold border backdrop-blur-md ${badgeColor}">
+                    <i class="fa-solid ${c.isOngoing ? 'fa-infinity' : 'fa-calendar-day'} text-[10px]"></i>
+                    <span>${badge}</span>
+                  </span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+                  <span class="font-mono bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md border border-white/20">
+                    <i class="fa-regular fa-clock mr-1"></i>${duration}
+                  </span>
+                  <span class="font-bold text-gold-400">Course #${c.id}</span>
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-4 sm:p-5">
+                <h3 class="text-base sm:text-lg font-bold text-navy-950 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-gold-400 transition-colors leading-snug mb-2">
+                  ${title}
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3 mb-4">
+                  ${intro}
+                </p>
+
+                <!-- 3 Key Learning Topics -->
+                <div class="space-y-1.5 border-t border-slate-100 dark:border-slate-800 pt-3">
+                  <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">${isUrdu ? 'اہم موضوعات:' : 'Key Covered Topics:'}</div>
+                  <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1">
+                    ${top3Topics.map(t => `<li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-emerald-500 text-[10px] mt-0.5 shrink-0"></i> <span class="line-clamp-1">${t}</span></li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action Footer -->
+            <div class="p-4 sm:p-5 pt-0 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2 mt-4">
+              <button onclick="openCourseDetails(${c.id})" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-gold-400 transition-colors cursor-pointer py-1.5 px-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+                <i class="fa-solid fa-eye text-xs"></i>
+                <span>${isUrdu ? 'مکمل نصاب دیکھیں' : 'View Syllabus'}</span>
+              </button>
+
+              <a href="admission.html?course=${c.id}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-xs transition-all">
+                <i class="fa-solid fa-file-signature text-xs"></i>
+                <span>${isUrdu ? 'داخلہ لیں' : 'Enroll Now'}</span>
+              </a>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderCurrentPageDynamicContent(isUrdu) {
+      renderCoursesCatalog();
+    }
+  </script>
+</body>
+</html>

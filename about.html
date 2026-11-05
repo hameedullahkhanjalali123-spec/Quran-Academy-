@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Q Islamic Academy</title>
+  <meta name="description" content="Learn about Q Islamic Academy, founded by Maulana Qari Hameedullah Qureshi. Dedicated to authentic 1-on-1 Quran, Tajweed, and Islamic scholarship worldwide.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              800: '#064e3b',
+              900: '#022c22',
+              950: '#011c15',
+            },
+            emeraldBrand: {
+              500: '#059669',
+              600: '#047857',
+              700: '#065f46',
+            },
+            ivory: {
+              50: '#fcfbf7',
+              100: '#f8f7f2',
+            },
+            gold: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              900: '#041329',
+              950: '#020b18',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Plus Jakarta Sans', 'sans-serif'],
+            urdu: ['"Jameel Noori Nastaleeq"', '"Noto Nastaliq Urdu"', 'serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en bg-[#FCFBF7] dark:bg-[#040D1A] text-slate-800 dark:text-slate-100 antialiased selection:bg-emerald-600 selection:text-white transition-colors duration-300">
+
+  <!-- =================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ================================================================= -->
+  <div class="bg-forest-950 text-white text-xs py-2 px-3 sm:px-6 border-b border-forest-900/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-bold text-[11px] border border-gold-500/30">
+          <i class="fa-solid fa-certificate text-[9px]"></i>
+          <span class="en-only">About Academy</span>
+          <span class="ur-only">تعارفِ اکیڈمی</span>
+        </span>
+        <span class="text-slate-300 text-xs">
+          <span class="en-only">10 Comprehensive Courses — Opportunity to complete most courses in approx. 30 days</span>
+          <span class="ur-only">10 جامع اسلامی کورسز — زیادہ تر کورسز تقریباً 30 دن میں مکمل کرنے کا سنہری موقع</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs">
+        <a href="https://wa.me/923118284694" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition-colors">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>+92 311 8284694</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       2. MAIN NAVIGATION BAR
+       ================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#051329]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="shrink-0 flex items-center gap-2 group">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy Logo" class="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform group-hover:scale-102">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-xs xl:text-sm font-bold text-slate-700 dark:text-slate-200">
+        <a href="index.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="home">Home</a>
+        <a href="about.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1 text-emerald-600 dark:text-gold-400 border-b-2 border-emerald-600 dark:border-gold-400" data-page="about.html">About</a>
+        <a href="courses.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="courses.html">Courses</a>
+        <a href="teachers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="teachers.html">Our Teachers</a>
+        <a href="method.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="method.html">Teaching Method</a>
+        <a href="gallery.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="gallery.html">Gallery</a>
+        <a href="centers.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="centers.html">Our Centers</a>
+        <a href="admission.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="admission.html">Admission</a>
+        <a href="contact.html" class="nav-link-item hover:text-emerald-600 dark:hover:text-gold-400 transition-colors py-1" data-page="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Theme Toggle -->
+        <button onclick="toggleTheme()" class="size-8 sm:size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-amber-300 flex items-center justify-center border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-xs" title="Toggle Dark/Light Mode">
+          <i id="themeIcon" class="fa-solid fa-moon text-xs sm:text-sm"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button onclick="toggleLanguage()" class="h-8 px-2.5 sm:h-9 sm:px-3 rounded-xl bg-gold-500/15 hover:bg-gold-500/25 text-gold-700 dark:text-gold-300 transition-all flex items-center gap-1 font-bold text-xs border border-gold-500/30 cursor-pointer shadow-xs" title="Toggle Language">
+          <i class="fa-solid fa-globe text-xs"></i>
+          <span id="langBtnText">اردو</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="admission.html" class="hidden sm:inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs shadow-md transition-all">
+          <i class="fa-solid fa-calendar-check text-gold-400"></i>
+          <span class="en-only">Book Free Trial</span>
+          <span class="ur-only">ٹرائل بک کریں</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden size-8 sm:size-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center border border-slate-200 dark:border-slate-700" aria-label="Open Menu">
+          <i class="fa-solid fa-bars text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 w-72 sm:w-80 bg-white dark:bg-[#071326] p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+          <img src="assets/q-islamic-logo.png" alt="Logo" class="h-9 w-auto">
+          <button onclick="toggleMobileMenu()" class="size-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col gap-2 font-bold text-sm text-slate-700 dark:text-slate-200">
+          <a href="index.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2.5 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-gold-400 transition-colors">About</a>
+          <a href="courses.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Courses</a>
+          <a href="teachers.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Our Teachers</a>
+          <a href="method.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Teaching Method</a>
+          <a href="gallery.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Gallery</a>
+          <a href="centers.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Our Centers</a>
+          <a href="admission.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Admission</a>
+          <a href="contact.html" class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-3">
+        <a href="admission.html" class="w-full py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+          <i class="fa-solid fa-file-signature text-gold-400"></i>
+          <span>Apply for Admission</span>
+        </a>
+        <a href="https://wa.me/923118284694" target="_blank" class="w-full py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp Inquiry</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       3. PAGE HERO BANNER
+       ================================================================= -->
+  <section class="relative py-12 sm:py-16 bg-gradient-to-b from-forest-950 via-forest-900 to-forest-950 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fbbf24_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 font-bold text-xs border border-gold-500/30 mb-3">
+        <i class="fa-solid fa-quran text-emerald-400 text-xs"></i>
+        <span class="en-only">Purity &bull; Discipline &bull; Excellence</span>
+        <span class="ur-only">اخلاص، معیار اور مستند دینی تعلیم</span>
+      </span>
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+        <span class="en-only">About Q Islamic Academy</span>
+        <span class="ur-only">کیو اسلامک اکیڈمی کا تعارف</span>
+      </h1>
+      <p class="max-w-3xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed">
+        <span class="en-only">
+          Founded on classical scholarship, pedagogical precision, and modern interactive technology. We bridge traditional Islamic knowledge with accessible online learning for students and families across the globe.
+        </span>
+        <span class="ur-only">
+          مستند دینی اسناد، روایتی تدریسی معیار اور جدید آن لائن سہولیات کا حسین امتزاج۔ کیو اسلامک اکیڈمی کا مشن دنیا بھر میں مقیم مسلم گھرانوں تک قرآن و سنت کی خالص تعلیم پہنچانا ہے۔
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       4. FOUNDER SPOTLIGHT
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 relative z-20">
+    <div class="rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] p-6 sm:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Portrait -->
+        <div class="lg:col-span-4 flex flex-col items-center text-center">
+          <div class="relative size-48 sm:size-56 rounded-full p-2 bg-gradient-to-tr from-emerald-600 via-gold-400 to-forest-800 shadow-xl mb-4">
+            <img src="assets/qari-hameedullah.png" alt="Maulana Qari Hameedullah Qureshi" class="w-full h-full object-cover rounded-full bg-slate-100">
+            <div class="absolute bottom-2 right-2 bg-forest-900 text-gold-400 p-2 rounded-full border border-gold-400 shadow-md">
+              <i class="fa-solid fa-check text-xs"></i>
+            </div>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-navy-950 dark:text-white">Maulana Qari Hameedullah Qureshi</h2>
+          <p class="text-xs font-semibold text-emerald-600 dark:text-gold-400">Founder &amp; Head Instructor</p>
+          <div class="text-[11px] text-slate-500 dark:text-slate-400 font-urdu mt-1">
+            فاضل درسِ نظامی (شہادت العالمیہ)، قاری و حافظ
+          </div>
+          <div class="mt-4 flex items-center gap-2">
+            <a href="https://wa.me/923118284694" target="_blank" class="px-4 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 hover:bg-emerald-500 transition-colors">
+              <i class="fa-brands fa-whatsapp"></i> Direct Consultation
+            </a>
+          </div>
+        </div>
+
+        <!-- Bio & Leadership Vision -->
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span class="en-only">Founder's Message &amp; Academic Heritage</span>
+            <span class="ur-only">بانیِ اکیڈمی کا پیغام و تدریسی وژن</span>
+          </div>
+
+          <h3 class="text-xl sm:text-2xl font-bold text-navy-950 dark:text-white leading-snug">
+            <span class="en-only">Dedicated to Authentic Tajweed and Preserving Islamic Identity in the Next Generation</span>
+            <span class="ur-only">صحیح تجوید کی ترویج اور نئی نسل کی دینی شناخت کا تحفظ</span>
+          </h3>
+
+          <div class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed">
+            <p>
+              <span class="en-only">
+                Under the academic guidance of Maulana Qari Hameedullah Qureshi, Q Islamic Academy was established to solve the critical dilemma faced by overseas and modern families: finding certified, patient, and methodologically sound Quran instructors who prioritize genuine articulation (Makharij) and Islamic tarbiyah rather than rushed completion.
+              </span>
+              <span class="ur-only">
+                مولانا قاری حمید اللہ قریشی کی زیرِ نگرانی کیو اسلامک اکیڈمی کا قیام اس ضرورت کے تحت عمل میں آیا کہ دنیا بھر کے مسلم خاندانوں کو ایسے باصلاحیت، صابر اور مستند اساتذہ میسر آئیں جو قرآن مجید کی تعلیم کو محض رسمی نہ سمجھیں بلکہ مخارج، تجوید اور اخلاقی تربیت پر یکساں توجہ دیں۔
+              </span>
+            </p>
+            <p>
+              <span class="en-only">
+                With a verified Master's degree in Islamic Sciences (Shahadat-ul-Almiyah / Dars-e-Nizami) and more than a decade of experience in classical Qira'at and Tajweed pedagogy, Maulana Qari Hameedullah personally screens and trains every male and female instructor joining the academy faculty.
+              </span>
+              <span class="ur-only">
+                وفاق المدارس سے شہادت العالمیہ (ایم اے اسلامیات و عربی مساوی) اور 10 سال سے زائد کا تدریسی تجربہ رکھنے والے بانی اکیڈمی ہر معلم اور باحجاب معلمہ کے چناؤ اور ان کی تدریسی تربیت کی بذاتِ خود نگرانی کرتے ہیں۔
+              </span>
+            </p>
+          </div>
+
+          <div class="pt-2 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-slate-800">
+              <div class="text-lg font-extrabold text-emerald-600 dark:text-gold-400">100%</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400">1-on-1 Focused Classes</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-slate-800">
+              <div class="text-lg font-extrabold text-emerald-600 dark:text-gold-400">10</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400">Comprehensive Courses</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-slate-800">
+              <div class="text-lg font-extrabold text-emerald-600 dark:text-gold-400">8</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400">Global Service Centers</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-navy-900 border border-slate-200 dark:border-slate-800">
+              <div class="text-lg font-extrabold text-emerald-600 dark:text-gold-400">24/7</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400">Flexible Scheduling</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       5. CORE ACADEMY VALUES & PILLARS
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs font-bold text-emerald-600 dark:text-gold-400 uppercase tracking-widest">
+        <span class="en-only">Guiding Principles</span>
+        <span class="ur-only">ہمارے بنیادی اصول</span>
+      </span>
+      <h2 class="text-xl sm:text-3xl font-extrabold text-navy-950 dark:text-white mt-1">
+        <span class="en-only">Why Families Trust Q Islamic Academy</span>
+        <span class="ur-only">خاندان کیو اسلامک اکیڈمی پر اعتماد کیوں کرتے ہیں؟</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Value 1 -->
+      <div class="p-6 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all space-y-3">
+        <div class="size-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl">
+          <i class="fa-solid fa-book-quran"></i>
+        </div>
+        <h3 class="text-base font-bold text-navy-950 dark:text-white">
+          <span class="en-only">Classical Sanad &amp; Vetted Tutors</span>
+          <span class="ur-only">مستند اسناد و تربیت یافتہ اساتذہ</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          <span class="en-only">
+            We never hire unverified tutors. Every scholar possesses certified credentials from recognized Islamic institutions and passes our rigorous recitation, pronunciation, and teaching methodology trials.
+          </span>
+          <span class="ur-only">
+            تمام اساتذہ معروف دینی اداروں سے سند یافتہ اور قاری ہیں۔ کسی بھی غیر تصدیق شدہ استاد کو پڑھانے کی ہرگز اجازت نہیں دی جاتی۔
+          </span>
+        </p>
+      </div>
+
+      <!-- Value 2 -->
+      <div class="p-6 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all space-y-3">
+        <div class="size-12 rounded-2xl bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center text-xl">
+          <i class="fa-solid fa-hands-holding-child"></i>
+        </div>
+        <h3 class="text-base font-bold text-navy-950 dark:text-white">
+          <span class="en-only">Purdah &amp; Dedicated Female Scholars</span>
+          <span class="ur-only">پردے کی پاسداری اور خواتین معلمات</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          <span class="en-only">
+            For sisters and young girls, we have qualified female Aalimat and Qariyaat observing strict Shariah purdah. Audio-focused classes and female administrative supervision guarantee 100% peace of mind.
+          </span>
+          <span class="ur-only">
+            بہنوں اور بچیوں کے لیے باحجاب، مستند عالمات اور قاریات کی زیرِ نگرانی کلاسز کا مکمل انتظام جہاں مکمل پردے اور احترام کا خیال رکھا جاتا ہے۔
+          </span>
+        </p>
+      </div>
+
+      <!-- Value 3 -->
+      <div class="p-6 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#07152B] border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all space-y-3">
+        <div class="size-12 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <h3 class="text-base font-bold text-navy-950 dark:text-white">
+          <span class="en-only">The 30-Day Intensive Option</span>
+          <span class="ur-only">30 روزہ خصوصی کورسز کی سہولت</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          <span class="en-only">
+            Recognizing that working adults and overseas students have tight schedules, our curriculum provides the opportunity to complete most specialized courses in approximately 30 focused daily lessons.
+          </span>
+          <span class="ur-only">
+            مصروف زندگی اور بیرونِ ملک طلبہ کے لیے زیادہ تر خصوصی کورسز تقریباً 30 اسباق اور 30 دن میں مکمل کرنے کا سنہری موقع فراہم کیا جاتا ہے۔
+          </span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================
+       6. THE 4-PHASE METHODOLOGY PREVIEW
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+    <div class="rounded-3xl bg-forest-950 text-white p-6 sm:p-10 border border-forest-900 shadow-lg">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-gold-400 font-bold text-xs uppercase tracking-wider">Pedagogical Framework</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">Our Proven 4-Phase Quran Retention Framework</h3>
+        </div>
+        <a href="method.html" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 shrink-0 transition-all">
+          <span>Read Full Methodology</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="p-4 rounded-2xl bg-forest-900/60 border border-forest-800 space-y-2">
+          <div class="text-gold-400 font-extrabold text-lg">01</div>
+          <h4 class="text-sm font-bold text-white">Daily Sabaq (New Lesson)</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            1-on-1 articulation correction with real-time pointer tracking on digital Mus'haf screen.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-forest-900/60 border border-forest-800 space-y-2">
+          <div class="text-gold-400 font-extrabold text-lg">02</div>
+          <h4 class="text-sm font-bold text-white">Sabqi (Recent Revision)</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Recitation of the last 4-8 lessons before concluding every class to cement retention.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-forest-900/60 border border-forest-800 space-y-2">
+          <div class="text-gold-400 font-extrabold text-lg">03</div>
+          <h4 class="text-sm font-bold text-white">Manzil (Cyclical Daur)</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Systematic repetition of earlier completed Juz so the student never forgets past chapters.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-forest-900/60 border border-forest-800 space-y-2">
+          <div class="text-gold-400 font-extrabold text-lg">04</div>
+          <h4 class="text-sm font-bold text-white">Islamic Tarbiyah &amp; Duas</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            5 dedicated minutes per session for daily Masnoon Duas, 6 Kalimas, and moral Islamic character.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       7. CTA BANNER
+       ================================================================= -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="rounded-3xl bg-gradient-to-r from-forest-900 via-forest-800 to-emerald-800 text-white p-8 sm:p-12 text-center relative overflow-hidden shadow-xl">
+      <div class="relative z-10 max-w-3xl mx-auto space-y-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold border border-gold-500/30">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span class="en-only">Begin Your Learning Path</span>
+          <span class="ur-only">اپنے تعلیمی سفر کا آغاز کریں</span>
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+          <span class="en-only">Schedule Your Free Diagnostic Class Today</span>
+          <span class="ur-only">آج ہی اپنی مفت تشخیصی کلاس بک کریں</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+          <span class="en-only">
+            Connect with our academic coordinator. We evaluate your current reading stage and assign a suitable certified teacher for your schedule.
+          </span>
+          <span class="ur-only">
+            ہمارے اکیڈمک کوآرڈینیٹر سے رابطہ کریں۔ ہم آپ کی موجودہ صلاحیت کے مطابق باقاعدہ استاد کا انتخاب کریں گے۔
+          </span>
+        </p>
+        <div class="pt-2 flex flex-wrap justify-center gap-3">
+          <a href="admission.html" class="px-6 py-3 rounded-xl bg-gold-500 hover:bg-gold-400 text-forest-950 font-extrabold text-xs sm:text-sm shadow-md transition-all">
+            <span class="en-only">Apply for Admission &rarr;</span>
+            <span class="ur-only">داخلہ فارم پُر کریں &larr;</span>
+          </a>
+          <a href="https://wa.me/923118284694?text=Assalam-o-Alaikum%20I%20want%20to%20learn%20more%20about%20Q%20Islamic%20Academy" target="_blank" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>WhatsApp (+92 311 8284694)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       8. FOOTER
+       ================================================================= -->
+  <footer class="bg-forest-950 text-slate-300 text-xs border-t border-forest-900 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <!-- Brand & Mission -->
+      <div class="space-y-3 md:col-span-1">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-10 w-auto">
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Premium online Islamic academy providing certified 1-on-1 Quran, Tajweed, Tafsir, and Arabic education across 25+ countries worldwide.
+        </p>
+        <div class="flex items-center gap-3 text-slate-400 pt-1">
+          <a href="https://wa.me/923118284694" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-red-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://facebook.com" target="_blank" class="size-8 rounded-lg bg-forest-900 hover:bg-blue-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Quick Links</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li><a href="index.html" class="hover:text-gold-400 transition-colors">Home Portal</a></li>
+          <li><a href="about.html" class="text-gold-400 font-semibold">About Academy</a></li>
+          <li><a href="courses.html" class="hover:text-gold-400 transition-colors">All 10 Courses</a></li>
+          <li><a href="teachers.html" class="hover:text-gold-400 transition-colors">Faculty &amp; Qaris</a></li>
+          <li><a href="method.html" class="hover:text-gold-400 transition-colors">Teaching Method</a></li>
+        </ul>
+      </div>
+
+      <!-- Centers & Media -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Portals &amp; Centers</h4>
+        <ul class="space-y-1.5 text-xs text-slate-400">
+          <li><a href="gallery.html" class="hover:text-gold-400 transition-colors">Public Teaching Gallery</a></li>
+          <li><a href="centers.html" class="hover:text-gold-400 transition-colors">8 Regional Desks</a></li>
+          <li><a href="admission.html" class="hover:text-gold-400 transition-colors">Online Admission</a></li>
+          <li><a href="contact.html" class="hover:text-gold-400 transition-colors">Contact Support</a></li>
+          <li><a href="admin.html" class="hover:text-gold-400 text-slate-500 text-[11px]"><i class="fa-solid fa-lock mr-1"></i>Admin Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-2">
+        <h4 class="font-bold text-white uppercase tracking-wider text-xs">Global Admissions</h4>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-phone text-emerald-400 mr-1.5"></i> +92 311 8284694</p>
+        <p class="text-xs text-slate-400"><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> WhatsApp Admissions (24/7)</p>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-envelope text-emerald-400 mr-1.5"></i> q.islamicacademy@gmail.com</p>
+        <p class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-emerald-400 mr-1.5"></i> Karachi Central HQ, Pakistan</p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-forest-900/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+      <p>&copy; 2026 Q Islamic Academy. All rights reserved.</p>
+      <p>Founder &amp; Head: Maulana Qari Hameedullah Qureshi</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

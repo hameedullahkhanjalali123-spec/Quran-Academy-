@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+  <defs>
+    <!-- Ultra-Luxurious Metallic 24K Gold Gradient with Specular Highlights -->
+    <linearGradient id="goldGradLuxe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="20%" stop-color="#FCD34D" />
+      <stop offset="40%" stop-color="#F59E0B" />
+      <stop offset="60%" stop-color="#D97706" />
+      <stop offset="80%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Beveled Gold Highlight -->
+    <linearGradient id="goldBevel" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="45%" stop-color="#FDE68A" />
+      <stop offset="55%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Royal Velvet Midnight Emerald Gradient -->
+    <radialGradient id="emeraldOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#065F46" />
+      <stop offset="60%" stop-color="#043E2E" />
+      <stop offset="100%" stop-color="#012419" />
+    </radialGradient>
+
+    <!-- Royal Navy Gradient -->
+    <linearGradient id="royalNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540" />
+      <stop offset="100%" stop-color="#041220" />
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="luxeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== MASTER EMBLEM (LEFT) ==================== -->
+  <g transform="translate(25, 10)" filter="url(#luxeShadow)">
+    <!-- Outer Radiant Halo Ring -->
+    <circle cx="100" cy="100" r="95" fill="none" stroke="url(#goldGradLuxe)" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+    <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGradLuxe)" stroke-width="1" opacity="0.8"/>
+
+    <!-- Shamsa Filigree Petals (16 Point Sacred Geometry) -->
+    <path d="M 172.0 100.0 Q 190.2 100.0 190.2 117.9 Q 183.3 134.5 166.5 127.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 166.5 127.6 Q 183.3 134.5 176.5 151.1 Q 163.8 163.8 150.9 150.9 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 150.9 150.9 Q 163.8 163.8 151.1 176.5 Q 134.5 183.3 127.6 166.5 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 127.6 166.5 Q 134.5 183.3 117.9 190.2 Q 100.0 190.2 100.0 172.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 100.0 172.0 Q 100.0 190.2 82.1 190.2 Q 65.5 183.3 72.4 166.5 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 72.4 166.5 Q 65.5 183.3 48.9 176.5 Q 36.2 163.8 49.1 150.9 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 49.1 150.9 Q 36.2 163.8 23.5 151.1 Q 16.7 134.5 33.5 127.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 33.5 127.6 Q 16.7 134.5 9.8 117.9 Q 9.8 100.0 28.0 100.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 28.0 100.0 Q 9.8 100.0 9.8 82.1 Q 16.7 65.5 33.5 72.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 33.5 72.4 Q 16.7 65.5 23.5 48.9 Q 36.2 36.2 49.1 49.1 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 49.1 49.1 Q 36.2 36.2 48.9 23.5 Q 65.5 16.7 72.4 33.5 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 72.4 33.5 Q 65.5 16.7 82.1 9.8 Q 100.0 9.8 100.0 28.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 100.0 28.0 Q 100.0 9.8 117.9 9.8 Q 134.5 16.7 127.6 33.5 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 127.6 33.5 Q 134.5 16.7 151.1 23.5 Q 163.8 36.2 150.9 49.1 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 150.9 49.1 Q 163.8 36.2 176.5 48.9 Q 183.3 65.5 166.5 72.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 166.5 72.4 Q 183.3 65.5 190.2 82.1 Q 190.2 100.0 172.0 100.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 156.0 100.0 Q 170.4 100.0 170.6 114.0 Q 165.0 126.9 151.7 121.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 151.7 121.4 Q 165.0 126.9 159.9 140.0 Q 149.8 149.8 139.6 139.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 139.6 139.6 Q 149.8 149.8 140.0 159.9 Q 126.9 165.0 121.4 151.7 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 121.4 151.7 Q 126.9 165.0 114.0 170.6 Q 100.0 170.4 100.0 156.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 100.0 156.0 Q 100.0 170.4 86.0 170.6 Q 73.1 165.0 78.6 151.7 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 78.6 151.7 Q 73.1 165.0 60.0 159.9 Q 50.2 149.8 60.4 139.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 60.4 139.6 Q 50.2 149.8 40.1 140.0 Q 35.0 126.9 48.3 121.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 48.3 121.4 Q 35.0 126.9 29.4 114.0 Q 29.6 100.0 44.0 100.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 44.0 100.0 Q 29.6 100.0 29.4 86.0 Q 35.0 73.1 48.3 78.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 48.3 78.6 Q 35.0 73.1 40.1 60.0 Q 50.2 50.2 60.4 60.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 60.4 60.4 Q 50.2 50.2 60.0 40.1 Q 73.1 35.0 78.6 48.3 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 78.6 48.3 Q 73.1 35.0 86.0 29.4 Q 100.0 29.6 100.0 44.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 100.0 44.0 Q 100.0 29.6 114.0 29.4 Q 126.9 35.0 121.4 48.3 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 121.4 48.3 Q 126.9 35.0 140.0 40.1 Q 149.8 50.2 139.6 60.4 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 139.6 60.4 Q 149.8 50.2 159.9 60.0 Q 165.0 73.1 151.7 78.6 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+    <path d="M 151.7 78.6 Q 165.0 73.1 170.6 86.0 Q 170.4 100.0 156.0 100.0 Z" fill="url(#goldGradLuxe)" opacity="0.85"/>
+
+    <!-- Deep Emerald Central Medallion -->
+    <circle cx="100" cy="100" r="68" fill="url(#emeraldOrb)" stroke="url(#goldBevel)" stroke-width="3"/>
+    <circle cx="100" cy="100" r="63" fill="none" stroke="url(#goldGradLuxe)" stroke-width="1" stroke-dasharray="4 2" opacity="0.7"/>
+
+    <!-- Sacred 8-Point Star Interlace in Background -->
+    <g opacity="0.35" stroke="url(#goldGradLuxe)" stroke-width="1.2" fill="none">
+      <rect x="52" y="52" width="96" height="96" rx="4" />
+      <rect x="52" y="52" width="96" height="96" rx="4" transform="rotate(45 100 100)" />
+    </g>
+
+    <!-- Beveled 3D Golden Crescent Moon -->
+    <!-- Shadow Side of Crescent -->
+    <path d="M 104 42 A 52 52 0 1 0 148 136 A 44 44 0 1 1 104 42 Z" fill="#92400E" opacity="0.7"/>
+    <!-- Lit Side of Crescent with Metallic Shimmer -->
+    <path d="M 102 44 A 50 50 0 1 0 144 134 A 42 42 0 1 1 102 44 Z" fill="url(#goldBevel)"/>
+
+    <!-- Radiant Top Star -->
+    <g transform="translate(132, 58) scale(0.95)">
+      <polygon points="12,0 15,8 24,12 15,16 12,24 9,16 0,12 9,8" fill="url(#goldBevel)"/>
+      <circle cx="12" cy="12" r="2.5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- The Holy Quran Opened upon Ornate Rehl -->
+    <!-- Rehl (Hand-carved wooden stand with gold inlay) -->
+    <path d="M 72 154 L 92 134 L 100 138 L 108 134 L 128 154" fill="none" stroke="url(#goldBevel)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 80 150 L 120 150" stroke="url(#goldGradLuxe)" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="96,136 104,136 102,148 98,148" fill="url(#goldBevel)"/>
+
+    <!-- Left Page of Holy Quran (Curved 3D Book Page) -->
+    <path d="M 54 116 Q 77 100 99 105 L 99 135 Q 77 130 54 142 Z" fill="#042F22"/>
+    <path d="M 57 119 Q 78 105 97 108 L 97 132 Q 78 128 57 138 Z" fill="#FDFBF7"/>
+    <!-- Quran Script lines (Fine gold calligraphy lines) -->
+    <line x1="64" y1="117" x2="90" y2="114" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="64" y1="122" x2="90" y2="119" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="64" y1="127" x2="84" y2="124" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right Page of Holy Quran -->
+    <path d="M 146 116 Q 123 100 101 105 L 101 135 Q 123 130 146 142 Z" fill="#042F22"/>
+    <path d="M 143 119 Q 122 105 103 108 L 103 132 Q 122 128 143 138 Z" fill="#FDFBF7"/>
+    <line x1="136" y1="117" x2="110" y2="114" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="136" y1="122" x2="110" y2="119" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="136" y1="127" x2="116" y2="124" stroke="url(#goldGradLuxe)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Golden Spine Ribbon (فاصل المصحف) -->
+    <path d="M 100 105 L 100 145" stroke="url(#goldBevel)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== EXECUTIVE TYPOGRAPHY (RIGHT) ==================== -->
+  <g transform="translate(245, 15)">
+    <!-- Bismillah / Sub-crest Arabic Calligraphy -->
+    <text x="3" y="44" font-family="'Traditional Arabic', 'Amiri', 'Scheherazade New', serif" font-size="28" font-weight="700" fill="#047857" letter-spacing="2">
+      أَكَادِيمِيَّةُ كِيُو لِتَعْلِيمِ القُرْآنِ الكَرِيم
+    </text>
+
+    <!-- Main Title: Q ISLAMIC (Architectural High-End Serif / Display Sans) -->
+    <g transform="translate(0, 105)">
+      <!-- Majestic letter Q with integrated gold accent -->
+      <text x="0" y="0" font-family="'Cinzel', 'Playfair Display', 'Trajan Pro', 'Georgia', serif" font-size="64" font-weight="900" fill="url(#royalNavy)" letter-spacing="3">
+        Q ISLAMIC
+      </text>
+    </g>
+
+    <!-- Second Line: ACADEMY (In Solid Luxury 24K Gold with Wide Kerning) -->
+    <g transform="translate(3, 155)">
+      <text x="0" y="0" font-family="'Montserrat', 'Cinzel', 'Poppins', sans-serif" font-size="44" font-weight="800" fill="url(#goldBevel)" letter-spacing="10">
+        ACADEMY
+      </text>
+    </g>
+
+    <!-- Divider Bar: Royal Gold Spear / Ribbon -->
+    <g transform="translate(3, 172)">
+      <line x1="0" y1="0" x2="120" y2="0" stroke="url(#goldBevel)" stroke-width="2.5"/>
+      <polygon points="120,-3 126,0 120,3" fill="url(#goldBevel)"/>
+      <circle cx="134" cy="0" r="3" fill="#047857"/>
+      <text x="148" y="4" font-family="'Montserrat', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#475569" letter-spacing="4">
+        ONLINE QURAN &amp; ARABIC EDUCATION • EST. 2024
+      </text>
+    </g>
+  </g>
+</svg>

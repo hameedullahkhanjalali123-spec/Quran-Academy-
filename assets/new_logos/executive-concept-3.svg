@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+  <defs>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="20%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="80%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <linearGradient id="emeraldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+
+    <filter id="shadowLuxe3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#064E3B" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- CREST EMBLEM -->
+  <g transform="translate(30, 12)" filter="url(#shadowLuxe3)">
+    <!-- Outer Octagon Shield -->
+    <polygon points="98,10 162,36 188,100 162,164 98,190 34,164 8,100 34,36" fill="url(#emeraldDark)" stroke="url(#gold3)" stroke-width="3"/>
+    <polygon points="98,16 156,40 180,100 156,160 98,184 40,160 16,100 40,40" fill="#011F18" stroke="url(#gold3)" stroke-width="1" stroke-dasharray="4 2"/>
+
+    <!-- Central Glowing Islamic Arch / Mihrab -->
+    <path d="M 60 148 L 60 95 Q 98 48 136 95 L 136 148 Z" fill="none" stroke="url(#gold3)" stroke-width="2.5"/>
+    <path d="M 68 148 L 68 98 Q 98 58 128 98 L 128 148 Z" fill="url(#emeraldDark)" opacity="0.6"/>
+
+    <!-- Hanging Lantern (قنديل إسلامي مضيء) -->
+    <line x1="98" y1="58" x2="98" y2="76" stroke="url(#gold3)" stroke-width="1.5"/>
+    <polygon points="94,76 102,76 104,88 92,88" fill="url(#gold3)"/>
+    <circle cx="98" cy="82" r="3" fill="#FFFBEB"/>
+
+    <!-- Radiant Golden Crescent & Star at the Arch Apex -->
+    <path d="M 98 28 A 22 22 0 1 0 116 62 A 18 18 0 1 1 98 28 Z" fill="url(#gold3)"/>
+    <polygon points="112,38 114,43 119,45 115,47 113,52 111,47 107,45 111,43" fill="url(#gold3)"/>
+
+    <!-- Open Holy Quran upon Traditional Rehl -->
+    <g transform="translate(98, 122)">
+      <!-- Rehl Base -->
+      <polygon points="-16,22 16,22 20,32 -20,32" fill="url(#gold3)"/>
+      <line x1="-26" y1="32" x2="26" y2="32" stroke="url(#gold3)" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Quran Pages -->
+      <path d="M 0 -8 Q -18 -18 -38 -14 L -38 12 Q -18 8 0 18 Z" fill="#FFFFFF"/>
+      <path d="M 0 -8 Q 18 -18 38 -14 L 38 12 Q 18 8 0 18 Z" fill="#FFFFFF"/>
+      
+      <!-- Gilded Edges -->
+      <path d="M -3 16 Q -19 7 -35 11" stroke="url(#gold3)" stroke-width="2" fill="none"/>
+      <path d="M 3 16 Q 19 7 35 11" stroke="url(#gold3)" stroke-width="2" fill="none"/>
+      
+      <!-- Script representation -->
+      <line x1="-8" y1="-3" x2="-28" y2="-6" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="-8" y1="2" x2="-28" y2="-1" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="-8" y1="7" x2="-24" y2="4" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+
+      <line x1="8" y1="-3" x2="28" y2="-6" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="8" y1="2" x2="28" y2="-1" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="8" y1="7" x2="24" y2="4" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- Center Spine -->
+      <line x1="0" y1="-9" x2="0" y2="20" stroke="url(#gold3)" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(245, 18)">
+    <!-- Arabic Calligraphy Header -->
+    <text x="2" y="44" font-family="'Traditional Arabic', 'Amiri', serif" font-size="28" font-weight="700" fill="#047857" letter-spacing="1">
+      مَرْكَزُ كِيُو لِعُلُومِ القُرْآنِ وَالدِّرَاسَاتِ الإِسْلَامِيَّة
+    </text>
+
+    <!-- Main Title: Q ISLAMIC -->
+    <text x="0" y="106" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="58" font-weight="900" fill="#042C22" letter-spacing="2">
+      Q ISLAMIC
+    </text>
+
+    <!-- ACADEMY with Dual Gold/Emerald Styling -->
+    <text x="2" y="156" font-family="'Cinzel', 'Montserrat', sans-serif" font-size="44" font-weight="800" fill="url(#gold3)" letter-spacing="8">
+      ACADEMY
+    </text>
+
+    <!-- Elegant Tagline -->
+    <g transform="translate(2, 174)">
+      <line x1="0" y1="0" x2="70" y2="0" stroke="#047857" stroke-width="2"/>
+      <polygon points="70,-3 75,0 70,3" fill="#047857"/>
+      <text x="86" y="4" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#64748B" letter-spacing="4">
+        AUTHENTIC TAJWEED • CERTIFIED SCHOLARS • GLOBAL ACCESS
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 90" width="420" height="90" direction="rtl">
+  <defs>
+    <linearGradient id="goldGradUr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfb235" />
+      <stop offset="50%" stop-color="#c59b27" />
+      <stop offset="100%" stop-color="#8c6d17" />
+    </linearGradient>
+    <linearGradient id="greenGradUr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#056a42" />
+      <stop offset="100%" stop-color="#023b24" />
+    </linearGradient>
+  </defs>
+
+  <!-- Islamic Emblem Icon (Right side for RTL) -->
+  <g transform="translate(330, 5)">
+    <rect x="0" y="0" width="80" height="80" rx="20" fill="url(#greenGradUr)" />
+    <rect x="2" y="2" width="76" height="76" rx="18" fill="none" stroke="url(#goldGradUr)" stroke-width="2" />
+    
+    <!-- Crescent & Star -->
+    <path d="M 40 18 A 11 11 0 1 0 48 36 A 14 14 0 1 1 40 18 Z" fill="url(#goldGradUr)" />
+    <polygon points="49,24 51,28 55,28 52,31 53,35 50,33 46,35 48,31 44,28 48,28" fill="url(#goldGradUr)" />
+
+    <!-- Open Holy Quran on Rehl -->
+    <path d="M 20 54 Q 30 46 39 49 L 39 67 Q 29 64 20 70 Z" fill="#ffffff" opacity="0.95" />
+    <path d="M 23 57 Q 31 51 37 53 L 37 64 Q 31 62 23 66 Z" fill="none" stroke="url(#goldGradUr)" stroke-width="1" />
+    
+    <path d="M 60 54 Q 50 46 41 49 L 41 67 Q 51 64 60 70 Z" fill="#ffffff" opacity="0.95" />
+    <path d="M 57 57 Q 49 51 43 53 L 43 64 Q 49 62 57 66 Z" fill="none" stroke="url(#goldGradUr)" stroke-width="1" />
+
+    <polygon points="38,65 42,65 44,74 36,74" fill="url(#goldGradUr)" />
+    <line x1="33" y1="74" x2="47" y2="74" stroke="url(#goldGradUr)" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Academy Typography (Urdu) -->
+  <g transform="translate(315, 12)" text-anchor="end">
+    <text x="0" y="34" font-family="'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif" font-size="28" font-weight="700" fill="#062c59">
+      کیو اسلامک اکیڈمی
+    </text>
+    <text x="0" y="55" font-family="'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif" font-size="15" font-weight="600" fill="#c59b27">
+      قرآن و اسلامی تعلیمات - اکیڈمی پروفائل
+    </text>
+    <text x="0" y="72" font-family="'Poppins', sans-serif" font-size="11" font-weight="500" fill="#64748b" direction="ltr">
+      +92 311 8284694 • آن لائن اکیڈمی
+    </text>
+  </g>
+</svg>

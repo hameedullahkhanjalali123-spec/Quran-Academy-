@@ -1,0 +1,10 @@
+# Temporary and heavy video render files
+*.mp4
+video_frames/
+generate_video.py
+render_scenes.py
+showcase_video.html
+promo_scenes.html
+.vscode/
+.DS_Store
+Thumbs.db

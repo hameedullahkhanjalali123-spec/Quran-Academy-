@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 200" width="840" height="200">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="qGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F766E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- ICON: Stylized Letter Q merged with Crescent & Holy Book -->
+  <g transform="translate(35, 18)" filter="url(#shadow3)">
+    <!-- Rounded Background Badge -->
+    <rect x="0" y="0" width="164" height="164" rx="36" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Outer Ring of 'Q' (Crescent shaped) -->
+    <path d="M 82 22 A 58 58 0 1 0 134 116 L 148 136 L 126 136 A 58 58 0 0 0 82 22 Z" fill="url(#qGrad)"/>
+    <circle cx="82" cy="80" r="38" fill="#FFFFFF"/>
+
+    <!-- Glowing Crescent inside Q -->
+    <path d="M 82 46 A 34 34 0 1 0 106 98 A 28 28 0 1 1 82 46 Z" fill="url(#qGold)"/>
+
+    <!-- Mini Star -->
+    <polygon points="106,58 108,63 113,64 109,66 107,71 105,66 100,64 105,63" fill="url(#qGold)"/>
+
+    <!-- Open Quran at bottom of Q -->
+    <path d="M 60 92 Q 74 84 88 87 L 88 108 Q 74 104 60 112 Z" fill="#0F766E"/>
+    <path d="M 116 92 Q 102 84 88 87 L 88 108 Q 102 104 116 112 Z" fill="#0F766E"/>
+    <path d="M 63 95 Q 75 88 86 90 L 86 105 Q 75 102 63 108 Z" fill="#FFFFFF"/>
+    <path d="M 113 95 Q 101 88 90 90 L 90 105 Q 101 102 113 108 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(230, 0)">
+    <!-- Top Line -->
+    <text x="0" y="86" font-family="'Inter', 'Poppins', 'Segoe UI', sans-serif" font-size="56" font-weight="900" fill="#0F172A" letter-spacing="1">
+      Q ISLAMIC
+    </text>
+
+    <!-- Second Line -->
+    <text x="2" y="142" font-family="'Inter', 'Poppins', 'Segoe UI', sans-serif" font-size="46" font-weight="800" fill="#0284C7" letter-spacing="5">
+      ACADEMY
+    </text>
+
+    <!-- Tagline with dots -->
+    <text x="2" y="172" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#64748B" letter-spacing="3">
+      LEARN QURAN • TAJWEED • ARABIC
+    </text>
+  </g>
+</svg>

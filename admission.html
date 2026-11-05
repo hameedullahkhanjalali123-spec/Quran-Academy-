@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">آن لائن داخلہ فارم | کیو اسلامک اکیڈمی</title>
+  <meta name="description" content="کیو اسلامک اکیڈمی کے آن لائن کورسز میں داخلہ اور ۳ روزہ مفت ٹرائل کے لیے آفیشل ایڈمیشن فارم۔ گھر بیٹھے مستند اساتذہ سے قرآن پاک سیکھیں۔">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#FDE68A',
+              400: '#FACC15',
+              500: '#EAB308',
+              600: '#CA8A04',
+              700: '#A16207',
+            },
+            navy: {
+              800: '#0B1B3D',
+              900: '#071229',
+              950: '#040B1A',
+            }
+          },
+          fontFamily: {
+            urdu: ["'Jameel Noori Nastaleeq'", "'Urdu Nastaleeq'", "'Noto Nastaliq Urdu'", "serif"],
+            arabic: ["'Amiri'", "'Scheherazade New'", "serif"],
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .admission-card {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+    }
+    .dark .admission-card {
+      background: rgba(7, 18, 41, 0.96);
+    }
+    .form-input-box {
+      transition: all 0.25s ease;
+    }
+    .form-input-box:focus-within {
+      border-color: #0d9488;
+      box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+    }
+    /* English mode font styling */
+    body.lang-en {
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      direction: ltr !important;
+      text-align: left !important;
+    }
+    body.lang-en * {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    body.lang-en i, 
+    body.lang-en [class*="fa-"] {
+      font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands', 'FontAwesome', sans-serif !important;
+    }
+    body.lang-en .font-arabic {
+      font-family: 'Amiri', serif !important;
+    }
+  </style>
+</head>
+<body class="lang-ur font-urdu bg-slate-50 dark:bg-[#040B1A] text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- =================================================================
+       TOP NOTIFICATION BAR (100% PURE URDU / PURE ENGLISH)
+       ================================================================= -->
+  <div class="bg-navy-950 text-slate-200 border-b border-navy-800 text-xs py-2 px-3 sm:px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-start">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-[11px] sm:text-xs border border-emerald-500/30 shrink-0">
+          <i class="fa-solid fa-check-circle text-[9px] sm:text-[10px]"></i>
+          <span class="en-only">Open Admissions</span>
+          <span class="ur-only">داخلے جاری ہیں</span>
+        </span>
+        <span class="text-slate-300 text-[11px] sm:text-xs">
+          <span class="en-only">3 Days Free Trial Evaluation Sessions Available Across All 10 Courses</span>
+          <span class="ur-only">تمام کورسز میں ۳ روزہ مفت ٹرائل کلاسز کی سہولت دستیاب ہے</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/923118284694" target="_blank" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors text-xs">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span class="phone-ltr">+92 311 8284694</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       MAIN STICKY HEADER WITH OFFICIAL LOGO
+       ================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#061221]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Brand Logo (High-Res Horizontal Logo - Mobile Compact) -->
+      <a href="index.html" class="shrink-0 flex items-center gap-1.5 group">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-9 sm:h-13 lg:h-16 w-auto object-contain transition-transform group-hover:scale-103 drop-shadow-sm">
+      </a>
+
+      <!-- Navigation Links Back to Home -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-700 dark:text-slate-200">
+        <a href="index.html" class="nav-link hover:text-teal-600 dark:hover:text-gold-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-house text-xs"></i>
+          <span class="en-only">Home</span>
+          <span class="ur-only">صفحۂ اول</span>
+        </a>
+        <a href="index.html#courses" class="nav-link hover:text-teal-600 dark:hover:text-gold-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-book-open text-xs"></i>
+          <span class="en-only">10 Courses</span>
+          <span class="ur-only">ہمارے 10 کورسز</span>
+        </a>
+        <a href="index.html#about" class="nav-link hover:text-teal-600 dark:hover:text-gold-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-info text-xs"></i>
+          <span class="en-only">About Academy</span>
+          <span class="ur-only">تعارفِ اکیڈمی</span>
+        </a>
+        <a href="index.html#faq" class="nav-link hover:text-teal-600 dark:hover:text-gold-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-question text-xs"></i>
+          <span class="en-only">FAQs</span>
+          <span class="ur-only">عام سوالات</span>
+        </a>
+      </nav>
+
+      <!-- Action Buttons & Controls (Theme & Language Sync) -->
+      <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+        <!-- Back to Home Button on Mobile -->
+        <a href="index.html" class="md:hidden size-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-xs" title="Home">
+          <i class="fa-solid fa-house text-xs"></i>
+        </a>
+
+        <!-- Dark / Light Mode -->
+        <button id="themeToggleBtn" onclick="toggleTheme()" class="size-8 sm:size-10 rounded-lg sm:rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-amber-300 transition-all flex items-center justify-center border border-slate-200 dark:border-slate-700 cursor-pointer shadow-xs" title="Toggle Dark/Light Mode">
+          <i id="themeIcon" class="fa-solid fa-moon text-xs sm:text-sm"></i>
+        </button>
+
+        <!-- Pure Language Switcher -->
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="h-8 px-2 sm:h-10 sm:px-3.5 rounded-lg sm:rounded-xl bg-gold-500/15 hover:bg-gold-500/25 text-gold-700 dark:text-gold-300 transition-all flex items-center gap-1 font-bold text-xs sm:text-sm border border-gold-500/30 cursor-pointer shadow-xs" title="Toggle Language">
+          <i class="fa-solid fa-globe text-[11px] sm:text-sm"></i>
+          <span id="langLabel">English</span>
+        </button>
+
+        <!-- Direct WhatsApp Link (Hidden on small mobile to avoid header overflow, visible sm+) -->
+        <a href="https://wa.me/923118284694" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span class="en-only">WhatsApp</span>
+          <span class="ur-only">واٹس ایپ</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       HERO BANNER FOR ADMISSION PAGE (MOBILE COMPACT & RESPONSIVE)
+       ================================================================= -->
+  <section class="relative py-8 sm:py-12 px-3 sm:px-6 lg:px-8 bg-gradient-to-b from-navy-950 via-[#07152B] to-slate-900 text-white overflow-hidden text-center">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <div class="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
+      <!-- Bismillah -->
+      <div class="font-arabic text-xl sm:text-3xl text-gold-400 font-bold mb-2 sm:mb-3 drop-shadow select-none">
+        بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+      </div>
+
+      <h1 class="text-2xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-2 sm:mb-4 drop-shadow-xl text-white">
+        <span class="en-only">Official Online Admission Form</span>
+        <span class="ur-only text-3xl sm:text-6xl">آن لائن داخلہ و ۳ روزہ مفت ٹرائل فارم</span>
+      </h1>
+
+      <p class="text-xs sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+        <span class="en-only">Welcome to Q Islamic Academy! Complete the form below to enroll or request your free 3-day evaluation trial. Regular classes begin after full satisfaction.</span>
+        <span class="ur-only text-sm sm:text-xl leading-relaxed sm:leading-loose">کیو اسلامک اکیڈمی میں خوش آمدید! درج ذیل آسان فارم پر کر کے داخلہ یا ۳ روزہ مفت ٹرائل حاصل کریں۔ تسلی کے بعد باقاعدہ کلاسز کا آغاز۔</span>
+      </p>
+
+      <!-- Trust Badges Strip -->
+      <div class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-6 mt-4 sm:mt-6 text-[11px] sm:text-sm text-gold-300 font-bold">
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/15">
+          <i class="fa-solid fa-gift text-emerald-400 text-xs"></i>
+          <span class="en-only">3 Days Free Trial</span>
+          <span class="ur-only">۳ دن کا مفت ٹرائل</span>
+        </span>
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/15">
+          <i class="fa-solid fa-users text-gold-400 text-xs"></i>
+          <span class="en-only">Certified Male &amp; Female Scholars</span>
+          <span class="ur-only">سند یافتہ معلمین و باحجاب معلمات (مرد و خواتین)</span>
+        </span>
+        <span class="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/15">
+          <i class="fa-solid fa-clock text-teal-400 text-xs"></i>
+          <span class="en-only">Flexible 24/7 Hours</span>
+          <span class="ur-only">24 گھنٹے حسبِ سہولت اوقات</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       MAIN ADMISSION FORM CONTAINER
+       ================================================================= -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-3 sm:px-6 py-6 sm:py-10">
+    <div class="admission-card rounded-2xl sm:rounded-3xl p-4 sm:p-10 shadow-2xl border border-slate-200 dark:border-slate-800">
+      
+      <!-- Card Header -->
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-6 mb-8 text-start flex items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 dark:text-white">
+            <span class="en-only">Student Enrollment Application</span>
+            <span class="ur-only text-3xl">طالب علم کی تفصیلی درخواستِ داخلہ</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+            <span class="en-only">Please provide accurate contact details so we can coordinate your class schedule and timings.</span>
+            <span class="ur-only text-base">براہِ کرم درست معلومات درج فرمائیں تاکہ رابطہ اور ٹائم ٹیبل طے کرنے میں آسانی ہو۔</span>
+          </p>
+        </div>
+        <div class="shrink-0 size-14 rounded-2xl bg-teal-50 dark:bg-teal-950 text-teal-600 dark:text-teal-400 flex items-center justify-center text-2xl shadow-inner">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+      </div>
+
+      <form id="standaloneAdmissionForm" onsubmit="handleStandaloneAdmission(event)" class="space-y-8 text-start">
+        
+        <!-- SECTION 1: ADMISSION TYPE -->
+        <div class="space-y-3">
+          <label class="block text-sm font-bold uppercase tracking-wider text-teal-700 dark:text-gold-400">
+            <span class="en-only">1. Select Admission Type *</span>
+            <span class="ur-only text-lg">۱۔ داخلے کی نوعیت منتخب فرمائیں *</span>
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label class="relative flex items-center gap-3.5 p-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 cursor-pointer hover:border-teal-500 transition-all has-checked:border-teal-600 has-checked:bg-teal-50/50 dark:has-checked:bg-teal-950/40 shadow-xs">
+              <input type="radio" name="admissionType" value="مفت ۳ روزہ ٹرائل" checked class="size-5 text-teal-600 focus:ring-teal-500">
+              <div>
+                <span class="font-extrabold text-navy-900 dark:text-white text-base block">
+                  <span class="en-only">Free 3-Day Trial Class</span>
+                  <span class="ur-only text-xl">مفت ۳ روزہ ٹرائل کلاس</span>
+                </span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block mt-0.5">
+                  <span class="en-only">Zero advance fee. Check teacher recitation &amp; methodology.</span>
+                  <span class="ur-only text-sm">بغیر پیشگی فیس، استاد کا پڑھانے کا طریقہ اور تشخیصی جائزہ۔</span>
+                </span>
+              </div>
+            </label>
+
+            <label class="relative flex items-center gap-3.5 p-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 cursor-pointer hover:border-teal-500 transition-all has-checked:border-teal-600 has-checked:bg-teal-50/50 dark:has-checked:bg-teal-950/40 shadow-xs">
+              <input type="radio" name="admissionType" value="باقاعدہ داخلہ" class="size-5 text-teal-600 focus:ring-teal-500">
+              <div>
+                <span class="font-extrabold text-navy-900 dark:text-white text-base block">
+                  <span class="en-only">Regular Monthly Admission</span>
+                  <span class="ur-only text-xl">باقاعدہ ماہانہ داخلہ</span>
+                </span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block mt-0.5">
+                  <span class="en-only">Direct enrollment in complete structured curriculum.</span>
+                  <span class="ur-only text-sm">مکمل نصاب و باقاعدہ ماہانہ شیڈول کے ساتھ فورا آغاز۔</span>
+                </span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- SECTION 2: PERSONAL & STUDENT INFORMATION -->
+        <div class="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+          <label class="block text-sm font-bold uppercase tracking-wider text-teal-700 dark:text-gold-400">
+            <span class="en-only">2. Student &amp; Guardian Information *</span>
+            <span class="ur-only text-lg">۲۔ طالب علم اور سرپرست کی معلومات *</span>
+          </label>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Student Name -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Student's Full Name *</span>
+                <span class="ur-only text-base">طالب علم کا نام *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="text" id="stdName" required placeholder="مثلاً: محمد احمد / فاطمہ" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white">
+                <i class="fa-solid fa-user px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+
+            <!-- Father Name -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Father's / Guardian's Name *</span>
+                <span class="ur-only text-base">والد یا سرپرست کا نام *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="text" id="stdFather" required placeholder="مثلاً: محمد طارق" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white">
+                <i class="fa-solid fa-user-group px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Gender -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Gender *</span>
+                <span class="ur-only text-base">جنس *</span>
+              </label>
+              <select id="stdGender" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white">
+                <option value="میل (Male)">میل (Male / لڑکا / مرد)</option>
+                <option value="فی میل (Female)">فی میل (Female / لڑکی / خاتون)</option>
+              </select>
+            </div>
+
+            <!-- Age -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Student's Age (Years) *</span>
+                <span class="ur-only text-base">طالب علم کی عمر (سال) *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="text" id="stdAge" required placeholder="مثلاً: 10 سال" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white">
+                <i class="fa-solid fa-cake-candles px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Country -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Country of Residence *</span>
+                <span class="ur-only text-base">ملک کا نام *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="text" id="stdCountry" required placeholder="مثلاً: پاکستان، یوکے، کینیڈا، امریکہ، امارات" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white">
+                <i class="fa-solid fa-globe px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+
+            <!-- City -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">City *</span>
+                <span class="ur-only text-base">شہر کا نام *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="text" id="stdCity" required placeholder="مثلاً: کراچی، لاہور، لندن، مانچسٹر" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white">
+                <i class="fa-solid fa-city px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: CONTACT & ACADEMIC PREFERENCES -->
+        <div class="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+          <label class="block text-sm font-bold uppercase tracking-wider text-teal-700 dark:text-gold-400">
+            <span class="en-only">3. Contact &amp; Course Preferences *</span>
+            <span class="ur-only text-lg">۳۔ رابطہ نمبر اور مطلوبہ کورس کی تفصیلات *</span>
+          </label>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- WhatsApp Mobile -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">WhatsApp / Mobile Number (with Country Code) *</span>
+                <span class="ur-only text-base">واٹس ایپ نمبر (بشمول کنٹری کوڈ) *</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="tel" id="stdPhone" required placeholder="+92 311 8284694" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white phone-ltr">
+                <i class="fa-brands fa-whatsapp px-3 text-emerald-500 text-base"></i>
+              </div>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Email Address (Optional)</span>
+                <span class="ur-only text-base">ای میل ایڈریس (اختیاری)</span>
+              </label>
+              <div class="form-input-box relative rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 overflow-hidden flex items-center">
+                <input type="email" id="stdEmail" placeholder="student@example.com" class="w-full px-3.5 py-2.5 text-sm bg-transparent outline-none text-slate-900 dark:text-white phone-ltr">
+                <i class="fa-solid fa-envelope px-3 text-slate-400 text-sm"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Course Selection -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Desired Course *</span>
+                <span class="ur-only text-base">مطلوبہ کورس *</span>
+              </label>
+              <select id="stdCourse" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white cursor-pointer">
+                <optgroup label="بنیادی قرآنی کورسز">
+                  <option value="1. آسان ناظرہ قرآن کورس (قاعدہ و ناظرہ)">1. آسان ناظرہ قرآن کورس (قاعدہ و ناظرہ)</option>
+                  <option value="2. آسان حفظ قرآن کورس">2. آسان حفظ قرآن کورس</option>
+                  <option value="5. آسان تفسیر القرآن کورس">5. آسان تفسیر القرآن کورس</option>
+                </optgroup>
+                <optgroup label="خصوصی کورسز (تقریباً 30 روزہ)">
+                  <option value="3. آسان تجوید کورس">3. آسان تجوید کورس</option>
+                  <option value="4. آسان 8 لہجات ومقامات کورس">4. آسان 8 لہجات ومقامات کورس</option>
+                  <option value="6. آسان قرآنی عربی گرامر کورس">6. آسان قرآنی عربی گرامر کورس</option>
+                  <option value="7. آسان پیغام قرآن کورس">7. آسان پیغام قرآن کورس</option>
+                  <option value="8. آسان سیرت النبی ﷺ کورس">8. آسان سیرت النبی ﷺ کورس</option>
+                  <option value="9. آسان ختم نبوت کورس">9. آسان ختم نبوت کورس</option>
+                  <option value="10. آسان مجموعہ احادیث کورس">10. آسان مجموعہ احادیث کورس</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- Teacher Selection -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Preferred Teacher / Tutor *</span>
+                <span class="ur-only text-base">استاد کا انتخاب *</span>
+              </label>
+              <select id="stdTeacher" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white cursor-pointer">
+                <option value="معلم (Male Scholar / قاری صاحب)">معلم (Male Scholar / قاری صاحب)</option>
+                <option value="معلمہ (Female Tutor / باحجاب عالمہ/حافظہ)">معلمہ (Female Tutor / باحجاب عالمہ/حافظہ)</option>
+                <option value="کوئی بھی مستند استاد (Any Qualified Tutor)">کوئی بھی مستند استاد (جو وقت پر میسر ہو)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Preferred Timing -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Preferred Class Timing</span>
+                <span class="ur-only text-base">کلاس کا پسندیدہ وقت</span>
+              </label>
+              <select id="stdTiming" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white cursor-pointer">
+                <option value="صبح (Morning 8 AM - 12 PM)">صبح (Morning 8 AM - 12 PM)</option>
+                <option value="دوپہر (Afternoon 12 PM - 4 PM)">دوپہر (Afternoon 12 PM - 4 PM)</option>
+                <option value="شام (Evening 4 PM - 8 PM)">شام (Evening 4 PM - 8 PM)</option>
+                <option value="رات (Night 8 PM - 12 AM)">رات (Night 8 PM - 12 AM)</option>
+                <option value="کسی بھی وقت (24 گھنٹے دستیاب)">کسی بھی وقت (24 گھنٹے دستیاب)</option>
+              </select>
+            </div>
+
+            <!-- Class Frequency -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <span class="en-only">Class Days Preference</span>
+                <span class="ur-only text-base">ہفتہ وار کلاسوں کی تعداد</span>
+              </label>
+              <select id="stdDays" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white cursor-pointer">
+                <option value="ہفتے میں 5 دن (پیر تا جمعہ)">ہفتے میں 5 دن (پیر تا جمعہ)</option>
+                <option value="ہفتے میں 3 دن (متبادل دن)">ہفتے میں 3 دن (متبادل دن)</option>
+                <option value="صرف ویک اینڈ (ہفتہ اور اتوار)">صرف ویک اینڈ (ہفتہ اور اتوار)</option>
+                <option value="روزانہ (پیر تا اتوار)">روزانہ (پیر تا اتوار)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <span class="en-only">Additional Note / Questions (Optional)</span>
+              <span class="ur-only text-base">اضافی سوال، وقت کی تفصیل یا کوئی خاص پیغام (اختیاری)</span>
+            </label>
+            <textarea id="stdNotes" rows="3" placeholder="اگر کوئی مخصوص وقت ہے یا کوئی سوال پوچھنا چاہتے ہیں تو یہاں لکھیں..." class="w-full p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-navy-950 text-sm outline-none focus:border-teal-500 text-slate-900 dark:text-white"></textarea>
+          </div>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="pt-6 border-t border-slate-200 dark:border-slate-800 space-y-3">
+          <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all flex items-center justify-center gap-3 cursor-pointer">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="en-only">Submit Application via WhatsApp (+92 311 8284694)</span>
+            <span class="ur-only text-xl">واٹس ایپ پر داخلہ فارم جمع کروائیں</span>
+          </button>
+
+          <p class="text-center text-xs text-slate-500 dark:text-slate-400">
+            <i class="fa-solid fa-lock text-emerald-500 mr-1"></i>
+            <span class="en-only">Your privacy is 100% protected. Our academic advisor will contact you directly on WhatsApp within 2 hours.</span>
+            <span class="ur-only text-sm">آپ کی معلومات مکمل محفوظ ہیں۔ ہمارا عملہ ۲ گھنٹے کے اندر اندر واٹس ایپ پر رابطہ کرے گا۔</span>
+          </p>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- 4 FEATURE CARDS (100% BILINGUAL) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <div class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+        <i class="fa-solid fa-gift text-2xl text-emerald-500 mb-2"></i>
+        <h4 class="font-bold text-navy-900 dark:text-white text-sm mb-1">
+          <span class="en-only">Free 3-Day Trial</span>
+          <span class="ur-only text-base">۳ دن کا مفت ٹرائل</span>
+        </h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          <span class="en-only">Completely risk-free evaluation.</span>
+          <span class="ur-only">مطمئن ہونے کے بعد باقاعدہ داخلہ۔</span>
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+        <i class="fa-solid fa-users text-2xl text-emerald-500 mb-2"></i>
+        <h4 class="font-bold text-navy-900 dark:text-white text-sm mb-1">
+          <span class="en-only">Male &amp; Female Tutors</span>
+          <span class="ur-only text-base font-bold">مرد اساتذہ اور معلمات موجود ہیں</span>
+        </h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          <span class="en-only">Qualified scholars &amp; female tutors available.</span>
+          <span class="ur-only">مرد اساتذہ اور پردے دار خواتین معلمات دستیاب ہیں۔</span>
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+        <i class="fa-solid fa-headset text-2xl text-gold-500 mb-2"></i>
+        <h4 class="font-bold text-navy-900 dark:text-white text-sm mb-1">
+          <span class="en-only">24/7 Global Flexible Times</span>
+          <span class="ur-only text-base">24 گھنٹے دستیاب اساتذہ</span>
+        </h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          <span class="en-only">Classes scheduled for your timezone.</span>
+          <span class="ur-only">امریکہ، یوکے، امارات کے مطابق۔</span>
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+        <i class="fa-solid fa-award text-2xl text-amber-500 mb-2"></i>
+        <h4 class="font-bold text-navy-900 dark:text-white text-sm mb-1">
+          <span class="en-only">Recognized Certificate</span>
+          <span class="ur-only text-base">مستند اعزازی سند</span>
+        </h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          <span class="en-only">Official certificates upon completion.</span>
+          <span class="ur-only">کورس مکمل کرنے پر اکیڈمی کی سند۔</span>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="bg-navy-950 text-slate-300 py-8 px-4 border-t border-navy-900 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-3">
+        <img src="assets/q-islamic-logo.png" alt="Q Islamic Academy" class="h-10 w-auto">
+        <span>
+          <span class="en-only">&copy; 2026 Q Islamic Academy. All rights reserved.</span>
+          <span class="ur-only">&copy; 2026 کیو اسلامک اکیڈمی (Q Islamic Academy). تمام حقوق محفوظ ہیں۔</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-gold-400">
+          <span class="en-only">Home</span>
+          <span class="ur-only">صفحۂ اول</span>
+        </a>
+        <a href="index.html#courses" class="hover:text-gold-400">
+          <span class="en-only">10 Courses</span>
+          <span class="ur-only">تمام کورسز</span>
+        </a>
+        <a href="https://wa.me/923118284694" target="_blank" class="text-emerald-400 hover:text-emerald-300 font-bold phone-ltr">+92 311 8284694</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       SCRIPT FOR PURE BILINGUAL LANGUAGE ENGINE & WHATSAPP SUBMISSION
+       ================================================================= -->
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script>
+    // Course Definitions for English and Urdu
+    const COURSES_DEF = [
+      { id: 1, ongoing: true, en: "1. Easy Quran Reading Course (Noorani Qaida & Nazrah)", ur: "1. آسان ناظرہ قرآن کورس (قاعدہ و ناظرہ)" },
+      { id: 2, ongoing: true, en: "2. Easy Quran Memorisation Course (Hifz)", ur: "2. آسان حفظ قرآن کورس" },
+      { id: 5, ongoing: true, en: "5. Easy Quran Tafsir Course", ur: "5. آسان تفسیر القرآن کورس" },
+      { id: 3, ongoing: false, en: "3. Easy Tajweed Course", ur: "3. آسان تجوید کورس" },
+      { id: 4, ongoing: false, en: "4. Easy 8 Lahjaat & Maqamaat Course", ur: "4. آسان 8 لہجات ومقامات کورس" },
+      { id: 6, ongoing: false, en: "6. Easy Arabic Grammar Course", ur: "6. آسان قرآنی عربی گرامر کورس" },
+      { id: 7, ongoing: false, en: "7. Easy Message of the Quran Course", ur: "7. آسان پیغام قرآن کورس" },
+      { id: 8, ongoing: false, en: "8. Easy Seerah of Prophet Muhammad (PBUH)", ur: "8. آسان سیرت النبی ﷺ کورس" },
+      { id: 9, ongoing: false, en: "9. Easy Finality of Prophethood Course", ur: "9. آسان ختم نبوت کورس" },
+      { id: 10, ongoing: false, en: "10. Easy Collection of Hadith Course", ur: "10. آسان مجموعہ احادیث کورس" }
+    ];
+
+    let currentLanguage = 'ur';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Setup Theme
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        const icon = document.getElementById('themeIcon');
+        if (icon) icon.className = 'fa-solid fa-sun text-sm';
+      }
+
+      // Read saved language from URL or localStorage
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramLang = urlParams.get('lang');
+      const savedLang = (paramLang === 'en' || paramLang === 'ur') ? paramLang : (localStorage.getItem('lang') || localStorage.getItem('language') || 'ur');
+      applyLanguage(savedLang);
+
+      // Check URL query parameter e.g. admission.html?course=3
+      const courseId = urlParams.get('course');
+      if (courseId) {
+        const select = document.getElementById('stdCourse');
+        if (select) {
+          for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value.startsWith(courseId + '.')) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    });
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const icon = document.getElementById('themeIcon');
+      const isDark = html.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      if (icon) {
+        icon.className = isDark ? 'fa-solid fa-sun text-sm' : 'fa-solid fa-moon text-sm';
+      }
+    }
+
+    function toggleLanguage() {
+      const targetLang = currentLanguage === 'ur' ? 'en' : 'ur';
+      applyLanguage(targetLang);
+    }
+
+    function applyLanguage(lang) {
+      currentLanguage = lang;
+      localStorage.setItem('lang', lang);
+      localStorage.setItem('language', lang);
+
+      const html = document.documentElement;
+      const body = document.body;
+      const label = document.getElementById('langLabel');
+      const titleEl = document.getElementById('pageTitle');
+
+      const isUrdu = lang === 'ur';
+
+      if (isUrdu) {
+        html.setAttribute('lang', 'ur');
+        html.setAttribute('dir', 'rtl');
+        body.classList.remove('lang-en');
+        body.classList.add('lang-ur');
+        if (label) label.textContent = 'English';
+        if (titleEl) titleEl.textContent = 'آن لائن داخلہ فارم | کیو اسلامک اکیڈمی';
+      } else {
+        html.setAttribute('lang', 'en');
+        html.setAttribute('dir', 'ltr');
+        body.classList.remove('lang-ur');
+        body.classList.add('lang-en');
+        if (label) label.textContent = 'اردو';
+        if (titleEl) titleEl.textContent = 'Online Admission Form | Q Islamic Academy';
+      }
+
+      // Update All Placeholders Dynamically
+      updateFormFields(isUrdu);
+    }
+
+    function updateFormFields(isUrdu) {
+      // Text inputs placeholders
+      const sName = document.getElementById('stdName');
+      const sFather = document.getElementById('stdFather');
+      const sAge = document.getElementById('stdAge');
+      const sCountry = document.getElementById('stdCountry');
+      const sCity = document.getElementById('stdCity');
+      const sPhone = document.getElementById('stdPhone');
+      const sNotes = document.getElementById('stdNotes');
+
+      if (sName) sName.placeholder = isUrdu ? 'مثلاً: محمد احمد / فاطمہ' : 'e.g. Ahmad / Ayesha';
+      if (sFather) sFather.placeholder = isUrdu ? 'مثلاً: محمد طارق' : 'e.g. Muhammad Tariq';
+      if (sAge) sAge.placeholder = isUrdu ? 'مثلاً: 10 سال' : 'e.g. 10 Years';
+      if (sCountry) sCountry.placeholder = isUrdu ? 'مثلاً: پاکستان، یوکے، کینیڈا، امریکہ، امارات' : 'e.g. United Kingdom, USA, Pakistan, UAE...';
+      if (sCity) sCity.placeholder = isUrdu ? 'مثلاً: کراچی، لاہور، لندن، مانچسٹر' : 'e.g. London, New York, Karachi, Birmingham...';
+      if (sPhone) sPhone.placeholder = '+92 311 8284694';
+      if (sNotes) sNotes.placeholder = isUrdu ? 'اگر کوئی مخصوص وقت ہے یا کوئی سوال پوچھنا چاہتے ہیں تو یہاں لکھیں...' : 'Type any special timing request or questions here...';
+
+      // Update Gender Select Options
+      const genderSel = document.getElementById('stdGender');
+      if (genderSel) {
+        const curVal = genderSel.value;
+        genderSel.innerHTML = isUrdu ? `
+          <option value="میل (Male)">میل (Male / لڑکا / مرد)</option>
+          <option value="فی میل (Female)">فی میل (Female / لڑکی / خاتون)</option>
+        ` : `
+          <option value="Male">Male (Boy / Brother)</option>
+          <option value="Female">Female (Girl / Sister)</option>
+        `;
+        genderSel.value = curVal;
+      }
+
+      // Update Course Select Options
+      const courseSel = document.getElementById('stdCourse');
+      if (courseSel) {
+        const selectedIdx = courseSel.selectedIndex >= 0 ? courseSel.selectedIndex : 0;
+        const ongoingGroupLabel = isUrdu ? "بنیادی قرآنی کورسز" : "Core Quran Courses";
+        const thirtyGroupLabel = isUrdu ? "خصوصی کورسز (تقریباً 30 روزہ)" : "Specialized Courses (~30 Days)";
+
+        const ongoingCourses = COURSES_DEF.filter(c => c.ongoing);
+        const thirtyCourses = COURSES_DEF.filter(c => !c.ongoing);
+
+        courseSel.innerHTML = `
+          <optgroup label="${ongoingGroupLabel}">
+            ${ongoingCourses.map(c => `<option value="${isUrdu ? c.ur : c.en}">${isUrdu ? c.ur : c.en}</option>`).join('')}
+          </optgroup>
+          <optgroup label="${thirtyGroupLabel}">
+            ${thirtyCourses.map(c => `<option value="${isUrdu ? c.ur : c.en}">${isUrdu ? c.ur : c.en}</option>`).join('')}
+          </optgroup>
+        `;
+        courseSel.selectedIndex = selectedIdx;
+      }
+
+      // Update Teacher Select Options
+      const teacherSel = document.getElementById('stdTeacher');
+      if (teacherSel) {
+        const curIdx = teacherSel.selectedIndex >= 0 ? teacherSel.selectedIndex : 0;
+        teacherSel.innerHTML = isUrdu ? `
+          <option value="معلم (Male Scholar / قاری صاحب)">معلم (Male Scholar / قاری صاحب)</option>
+          <option value="معلمہ (Female Tutor / باحجاب عالمہ/حافظہ)">معلمہ (Female Tutor / باحجاب عالمہ/حافظہ)</option>
+          <option value="کوئی بھی مستند استاد (Any Qualified Tutor)">کوئی بھی مستند استاد (جو وقت پر میسر ہو)</option>
+        ` : `
+          <option value="Male Scholar (Certified Qari)">Male Scholar (Certified Qari)</option>
+          <option value="Female Tutor (Certified Alima / Hafiza in Purdah)">Female Tutor (Certified Alima / Hafiza in Purdah)</option>
+          <option value="Any Qualified Tutor (Flexible Availability)">Any Qualified Tutor (Flexible Availability)</option>
+        `;
+        teacherSel.selectedIndex = curIdx;
+      }
+
+      // Update Timing Select Options
+      const timingSel = document.getElementById('stdTiming');
+      if (timingSel) {
+        const curIdx = timingSel.selectedIndex >= 0 ? timingSel.selectedIndex : 0;
+        timingSel.innerHTML = isUrdu ? `
+          <option value="صبح (Morning 8 AM - 12 PM)">صبح (Morning 8 AM - 12 PM)</option>
+          <option value="دوپہر (Afternoon 12 PM - 4 PM)">دوپہر (Afternoon 12 PM - 4 PM)</option>
+          <option value="شام (Evening 4 PM - 8 PM)">شام (Evening 4 PM - 8 PM)</option>
+          <option value="رات (Night 8 PM - 12 AM)">رات (Night 8 PM - 12 AM)</option>
+          <option value="کسی بھی وقت (24 گھنٹے دستیاب)">کسی بھی وقت (24 گھنٹے دستیاب)</option>
+        ` : `
+          <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM - 12:00 PM)</option>
+          <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+          <option value="Evening (4:00 PM - 8:00 PM)">Evening (4:00 PM - 8:00 PM)</option>
+          <option value="Night (8:00 PM - 12:00 AM)">Night (8:00 PM - 12:00 AM)</option>
+          <option value="Any Flexible Time (24/7 Available)">Any Flexible Time (24/7 Available)</option>
+        `;
+        timingSel.selectedIndex = curIdx;
+      }
+
+      // Update Days Select Options
+      const daysSel = document.getElementById('stdDays');
+      if (daysSel) {
+        const curIdx = daysSel.selectedIndex >= 0 ? daysSel.selectedIndex : 0;
+        daysSel.innerHTML = isUrdu ? `
+          <option value="ہفتے میں 5 دن (پیر تا جمعہ)">ہفتے میں 5 دن (پیر تا جمعہ)</option>
+          <option value="ہفتے میں 3 دن (متبادل دن)">ہفتے میں 3 دن (متبادل دن)</option>
+          <option value="صرف ویک اینڈ (ہفتہ اور اتوار)">صرف ویک اینڈ (ہفتہ اور اتوار)</option>
+          <option value="روزانہ (پیر تا اتوار)">روزانہ (پیر تا اتوار)</option>
+        ` : `
+          <option value="5 Days a Week (Monday to Friday)">5 Days a Week (Monday to Friday)</option>
+          <option value="3 Days a Week (Alternate Days)">3 Days a Week (Alternate Days)</option>
+          <option value="Weekend Only (Saturday & Sunday)">Weekend Only (Saturday & Sunday)</option>
+          <option value="Daily (Monday to Sunday)">Daily (Monday to Sunday)</option>
+        `;
+        daysSel.selectedIndex = curIdx;
+      }
+    }
+
+    function handleStandaloneAdmission(e) {
+      e.preventDefault();
+      const isUrdu = currentLanguage === 'ur';
+
+      const admissionType = document.querySelector('input[name="admissionType"]:checked')?.value || (isUrdu ? 'مفت ۳ روزہ ٹرائل' : 'Free 3-Day Trial');
+      const name = document.getElementById('stdName')?.value.trim() || '';
+      const father = document.getElementById('stdFather')?.value.trim() || '';
+      const gender = document.getElementById('stdGender')?.value || '';
+      const age = document.getElementById('stdAge')?.value.trim() || '';
+      const country = document.getElementById('stdCountry')?.value.trim() || '';
+      const city = document.getElementById('stdCity')?.value.trim() || '';
+      const phone = document.getElementById('stdPhone')?.value.trim() || '';
+      const email = document.getElementById('stdEmail')?.value.trim() || (isUrdu ? 'فراہم نہیں کیا گیا' : 'Not provided');
+      const course = document.getElementById('stdCourse')?.value || '';
+      const teacher = document.getElementById('stdTeacher')?.value || '';
+      const timing = document.getElementById('stdTiming')?.value || '';
+      const days = document.getElementById('stdDays')?.value || '';
+      const notes = document.getElementById('stdNotes')?.value.trim() || (isUrdu ? 'کوئی اضافی نوٹ نہیں' : 'None');
+
+      let messageText = '';
+      if (isUrdu) {
+        messageText = `السلام علیکم ورحمۃ اللہ وبرکاتہ!
+کیو اسلامک اکیڈمی (Q Islamic Academy)
+───────────────────────
+📋 *درخواست برائے آن لائن داخلہ و رجسٹریشن*
+───────────────────────
+📌 *داخلے کی نوعیت:* ${admissionType}
+👤 *طالب علم کا نام:* ${name}
+👨‍👦 *والد یا سرپرست کا نام:* ${father}
+⚧ *جنس:* ${gender}
+🎂 *طالب علم کی عمر:* ${age}
+🌍 *ملک کا نام:* ${country}
+🏙️ *شہر کا نام:* ${city}
+📱 *واٹس ایپ رابطہ نمبر:* ${phone}
+📧 *ای میل ایڈریس:* ${email}
+
+📚 *مطلوبہ کورس:* ${course}
+🎓 *استاد کا انتخاب:* ${teacher}
+⏰ *کلاس کا پسندیدہ وقت:* ${timing}
+📅 *ہفتہ وار کلاسوں کی تعداد:* ${days}
+📝 *اضافی نوٹ / پیغام:* ${notes}
+───────────────────────
+براہِ کرم کلاس شیڈول کر کے جلد از جلد واٹس ایپ پر رابطہ فرمائیں۔ جزاکم اللہ خیرا!`;
+      } else {
+        messageText = `Assalam-o-Alaikum Wa Rahmatullahi Wa Barakatuh!
+Q Islamic Academy - Official Admission Application
+───────────────────────
+📋 *ONLINE ADMISSION APPLICATION*
+───────────────────────
+📌 *Admission Type:* ${admissionType}
+👤 *Student Name:* ${name}
+👨‍👦 *Father/Guardian Name:* ${father}
+⚧ *Gender:* ${gender}
+🎂 *Age:* ${age}
+🌍 *Country:* ${country}
+🏙️ *City:* ${city}
+📱 *WhatsApp Number:* ${phone}
+📧 *Email Address:* ${email}
+
+📚 *Desired Course:* ${course}
+🎓 *Teacher Preference:* ${teacher}
+⏰ *Preferred Class Time:* ${timing}
+📅 *Class Days Frequency:* ${days}
+📝 *Additional Notes / Queries:* ${notes}
+───────────────────────
+Please schedule my evaluation session and contact me on WhatsApp. JazakAllah Khair!`;
+      }
+
+      // Save inquiry to Q_STORE for Admin Management Portal
+      try {
+        if (window.Q_STORE && window.Q_STORE.addInquiry) {
+          window.Q_STORE.addInquiry({
+            name: name,
+            phone: phone,
+            country: country ? `${country} (${city})` : city,
+            course: course,
+            timing: timing,
+            forWhom: `${gender || 'Student'}, Age: ${age || 'N/A'}, Father: ${father || 'N/A'}`,
+            notes: notes ? `Type: ${admissionType} | Teacher: ${teacher} | Days: ${days} | Notes: ${notes}` : `Type: ${admissionType} | Teacher: ${teacher}`
+          });
+        }
+      } catch (err) {
+        console.warn('Could not save to Q_STORE:', err);
+      }
+
+      const waNumber = "923118284694";
+      const targetUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(messageText)}`;
+      window.open(targetUrl, '_blank');
+    }
+
+    // Explicitly bind to window for inline HTML onclick/onsubmit attributes
+    window.toggleTheme = toggleTheme;
+    window.toggleLanguage = toggleLanguage;
+    window.handleStandaloneAdmission = handleStandaloneAdmission;
+  </script>
+</body>
+</html>
